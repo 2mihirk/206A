@@ -1,0 +1,2 @@
+string user_message
+float64 timestamp

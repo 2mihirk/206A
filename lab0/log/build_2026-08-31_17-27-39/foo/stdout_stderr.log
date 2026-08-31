@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/foo/foo.egg-info
+writing ../../build/foo/foo.egg-info/PKG-INFO
+writing dependency_links to ../../build/foo/foo.egg-info/dependency_links.txt
+writing requirements to ../../build/foo/foo.egg-info/requires.txt
+writing top-level names to ../../build/foo/foo.egg-info/top_level.txt
+writing manifest file '../../build/foo/foo.egg-info/SOURCES.txt'
+reading manifest file '../../build/foo/foo.egg-info/SOURCES.txt'
+writing manifest file '../../build/foo/foo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user/ros_workspaces/lab0/build/foo/build/lib/foo
+copying foo/__init__.py -> /home/user/ros_workspaces/lab0/build/foo/build/lib/foo
+running install
+running install_lib
+creating /home/user/ros_workspaces/lab0/install/foo/lib/python3.10/site-packages/foo
+copying /home/user/ros_workspaces/lab0/build/foo/build/lib/foo/__init__.py -> /home/user/ros_workspaces/lab0/install/foo/lib/python3.10/site-packages/foo
+byte-compiling /home/user/ros_workspaces/lab0/install/foo/lib/python3.10/site-packages/foo/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/user/ros_workspaces/lab0/install/foo/share/ament_index/resource_index/packages
+copying resource/foo -> /home/user/ros_workspaces/lab0/install/foo/share/ament_index/resource_index/packages
+copying package.xml -> /home/user/ros_workspaces/lab0/install/foo/share/foo
+running install_egg_info
+Copying ../../build/foo/foo.egg-info to /home/user/ros_workspaces/lab0/install/foo/lib/python3.10/site-packages/foo-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/user/ros_workspaces/lab0/build/foo/install.log'

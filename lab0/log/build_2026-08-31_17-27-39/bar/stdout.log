@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/bar/bar.egg-info
+writing ../../build/bar/bar.egg-info/PKG-INFO
+writing dependency_links to ../../build/bar/bar.egg-info/dependency_links.txt
+writing requirements to ../../build/bar/bar.egg-info/requires.txt
+writing top-level names to ../../build/bar/bar.egg-info/top_level.txt
+writing manifest file '../../build/bar/bar.egg-info/SOURCES.txt'
+reading manifest file '../../build/bar/bar.egg-info/SOURCES.txt'
+writing manifest file '../../build/bar/bar.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user/ros_workspaces/lab0/build/bar/build/lib/bar
+copying bar/__init__.py -> /home/user/ros_workspaces/lab0/build/bar/build/lib/bar
+running install
+running install_lib
+creating /home/user/ros_workspaces/lab0/install/bar/lib/python3.10/site-packages/bar
+copying /home/user/ros_workspaces/lab0/build/bar/build/lib/bar/__init__.py -> /home/user/ros_workspaces/lab0/install/bar/lib/python3.10/site-packages/bar
+byte-compiling /home/user/ros_workspaces/lab0/install/bar/lib/python3.10/site-packages/bar/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/user/ros_workspaces/lab0/install/bar/share/ament_index/resource_index/packages
+copying resource/bar -> /home/user/ros_workspaces/lab0/install/bar/share/ament_index/resource_index/packages
+copying package.xml -> /home/user/ros_workspaces/lab0/install/bar/share/bar
+running install_egg_info
+Copying ../../build/bar/bar.egg-info to /home/user/ros_workspaces/lab0/install/bar/lib/python3.10/site-packages/bar-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/user/ros_workspaces/lab0/build/bar/install.log'

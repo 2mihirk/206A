@@ -1,0 +1,29 @@
+[0.837s] Invoking command in '/home/user/ros_workspaces/lab1/src/my_chatter': LD_LIBRARY_PATH=/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/user/ros_workspaces/lab1/build/my_chatter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_chatter build --build-base /home/user/ros_workspaces/lab1/build/my_chatter/build install --record /home/user/ros_workspaces/lab1/build/my_chatter/install.log --single-version-externally-managed install_data
+[1.200s] running egg_info
+[1.222s] writing ../../build/my_chatter/my_chatter.egg-info/PKG-INFO
+[1.223s] writing dependency_links to ../../build/my_chatter/my_chatter.egg-info/dependency_links.txt
+[1.223s] writing entry points to ../../build/my_chatter/my_chatter.egg-info/entry_points.txt
+[1.223s] writing requirements to ../../build/my_chatter/my_chatter.egg-info/requires.txt
+[1.223s] writing top-level names to ../../build/my_chatter/my_chatter.egg-info/top_level.txt
+[1.272s] reading manifest file '../../build/my_chatter/my_chatter.egg-info/SOURCES.txt'
+[1.273s] writing manifest file '../../build/my_chatter/my_chatter.egg-info/SOURCES.txt'
+[1.273s] running build
+[1.274s] running build_py
+[1.274s] copying my_chatter/my_talker.py -> /home/user/ros_workspaces/lab1/build/my_chatter/build/lib/my_chatter
+[1.274s] copying my_chatter/__init__.py -> /home/user/ros_workspaces/lab1/build/my_chatter/build/lib/my_chatter
+[1.274s] copying my_chatter/my_listener.py -> /home/user/ros_workspaces/lab1/build/my_chatter/build/lib/my_chatter
+[1.275s] running install
+[1.280s] running install_lib
+[1.304s] copying /home/user/ros_workspaces/lab1/build/my_chatter/build/lib/my_chatter/my_talker.py -> /home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages/my_chatter
+[1.305s] byte-compiling /home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages/my_chatter/my_talker.py to my_talker.cpython-310.pyc
+[1.305s] running install_data
+[1.306s] copying resource/my_chatter -> /home/user/ros_workspaces/lab1/install/my_chatter/share/ament_index/resource_index/packages
+[1.306s] copying package.xml -> /home/user/ros_workspaces/lab1/install/my_chatter/share/my_chatter
+[1.306s] running install_egg_info
+[1.330s] removing '/home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages/my_chatter-0.0.0-py3.10.egg-info' (and everything under it)
+[1.330s] Copying ../../build/my_chatter/my_chatter.egg-info to /home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages/my_chatter-0.0.0-py3.10.egg-info
+[1.332s] running install_scripts
+[1.386s] Installing my_listener script to /home/user/ros_workspaces/lab1/install/my_chatter/lib/my_chatter
+[1.386s] Installing my_talker script to /home/user/ros_workspaces/lab1/install/my_chatter/lib/my_chatter
+[1.387s] writing list of installed files to '/home/user/ros_workspaces/lab1/build/my_chatter/install.log'
+[1.414s] Invoked command in '/home/user/ros_workspaces/lab1/src/my_chatter' returned '0': LD_LIBRARY_PATH=/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/user/ros_workspaces/lab1/build/my_chatter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ros_workspaces/lab1/install/my_chatter/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_chatter build --build-base /home/user/ros_workspaces/lab1/build/my_chatter/build install --record /home/user/ros_workspaces/lab1/build/my_chatter/install.log --single-version-externally-managed install_data

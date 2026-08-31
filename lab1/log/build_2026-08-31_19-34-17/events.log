@@ -1,0 +1,484 @@
+[0.000000] (-) TimerEvent: {}
+[0.000353] (chatter) JobQueued: {'identifier': 'chatter', 'dependencies': OrderedDict()}
+[0.000459] (my_chatter_msgs) JobQueued: {'identifier': 'my_chatter_msgs', 'dependencies': OrderedDict()}
+[0.000486] (chatter) JobStarted: {'identifier': 'chatter'}
+[0.010803] (my_chatter_msgs) JobStarted: {'identifier': 'my_chatter_msgs'}
+[0.099245] (-) TimerEvent: {}
+[0.199518] (-) TimerEvent: {}
+[0.267628] (my_chatter_msgs) JobProgress: {'identifier': 'my_chatter_msgs', 'progress': 'cmake'}
+[0.268158] (my_chatter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/ros_workspaces/lab1/src/my_chatter_msgs', '-DCMAKE_INSTALL_PREFIX=/home/user/ros_workspaces/lab1/install/my_chatter_msgs'], 'cwd': '/home/user/ros_workspaces/lab1/build/my_chatter_msgs', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://3_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '3_xterm'), ('ROBOT_HOSTNAME', ''), ('PWD', '/home/user/ros_workspaces/lab1/build/my_chatter_msgs'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '3_xterm'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://3_xterm:11311'), ('ROS_HOSTNAME', '3_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '1046974'), ('SLOT_PREFIX', 'b385e110-236a-4633-8bf3-2a178787ef76'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25634'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros_workspaces/lab1/src'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20003'), ('_', '/usr/bin/env'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.299608] (-) TimerEvent: {}
+[0.399851] (-) TimerEvent: {}
+[0.500130] (-) TimerEvent: {}
+[0.600418] (-) TimerEvent: {}
+[0.700696] (-) TimerEvent: {}
+[0.763193] (chatter) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/chatter', 'build', '--build-base', '/home/user/ros_workspaces/lab1/build/chatter/build', 'install', '--record', '/home/user/ros_workspaces/lab1/build/chatter/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/user/ros_workspaces/lab1/src/chatter', 'env': {'ROS_VERSION': '2', 'NVIDIA_VISIBLE_DEVICES': 'all', 'GAZEBO_MASTER_URI': 'http://3_xterm:11345', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '3_xterm', 'ROBOT_HOSTNAME': '', 'PWD': '/home/user/ros_workspaces/lab1/build/chatter', 'PORT': '4000', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'ROS_IP': '', 'HOME': '/home/user', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'LANG': 'en_US.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo', 'COLCON_PREFIX_PATH': '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install', 'GAZEBO_MASTER_PORT': '11345', 'NVM_DIR': '/usr/local/share/shell/.nvm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/user/ros_workspaces/lab1/build/chatter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ros_workspaces/lab1/install/chatter/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics', 'COLCON': '1', 'TERM': 'xterm-color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SNAPCRAFT_BUILD_ENVIRONMENT': 'host', 'GAZEBO_MASTER_HOSTNAME': '3_xterm', 'DISPLAY': ':1', 'SHLVL': '2', 'NVM_CD_FLAGS': '', 'ROS_MASTER_URI': 'http://3_xterm:11311', 'ROS_HOSTNAME': '3_xterm', 'LD_LIBRARY_PATH': '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'ROS_LOCALHOST_ONLY': '0', 'SLOT_SHELL_START_ID': '1046974', 'SLOT_PREFIX': 'b385e110-236a-4633-8bf3-2a178787ef76', 'LC_ALL': 'C', 'SOURCE_ROS1_WS': '', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox', 'SLOT_JENKINS_PORT': '25634', 'SLOT_SYSTEMD': 'False', 'PATH': '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin', 'SELECTED_ROS_DISTRO': 'humble', 'NVM_BIN': '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin', 'NODE_VERSION': 'v8.17.0', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_DISTRO': 'humble', 'GAZEBO_VERBOSE': '0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'OLDPWD': '/home/user/ros_workspaces/lab1/src', 'SOURCE_ROS2_WS': 'True', 'SLOT_ROSBRIDGE_PORT': '20003', '_': '/usr/bin/env'}, 'shell': False}
+[0.800806] (-) TimerEvent: {}
+[0.901071] (-) TimerEvent: {}
+[0.942914] (chatter) StderrLine: {'line': b"/usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.943135] (chatter) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.001175] (-) TimerEvent: {}
+[1.070518] (chatter) StdoutLine: {'line': b'running egg_info\n'}
+[1.088293] (chatter) StdoutLine: {'line': b'writing ../../build/chatter/chatter.egg-info/PKG-INFO\n'}
+[1.088749] (chatter) StdoutLine: {'line': b'writing dependency_links to ../../build/chatter/chatter.egg-info/dependency_links.txt\n'}
+[1.088977] (chatter) StdoutLine: {'line': b'writing entry points to ../../build/chatter/chatter.egg-info/entry_points.txt\n'}
+[1.089177] (chatter) StdoutLine: {'line': b'writing requirements to ../../build/chatter/chatter.egg-info/requires.txt\n'}
+[1.089312] (chatter) StdoutLine: {'line': b'writing top-level names to ../../build/chatter/chatter.egg-info/top_level.txt\n'}
+[1.101250] (-) TimerEvent: {}
+[1.130314] (chatter) StdoutLine: {'line': b"reading manifest file '../../build/chatter/chatter.egg-info/SOURCES.txt'\n"}
+[1.131609] (chatter) StdoutLine: {'line': b"writing manifest file '../../build/chatter/chatter.egg-info/SOURCES.txt'\n"}
+[1.131777] (chatter) StdoutLine: {'line': b'running build\n'}
+[1.131894] (chatter) StdoutLine: {'line': b'running build_py\n'}
+[1.132059] (chatter) StdoutLine: {'line': b'copying chatter/publisher_member_function.py -> /home/user/ros_workspaces/lab1/build/chatter/build/lib/chatter\n'}
+[1.132287] (chatter) StdoutLine: {'line': b'copying chatter/__init__.py -> /home/user/ros_workspaces/lab1/build/chatter/build/lib/chatter\n'}
+[1.132469] (chatter) StdoutLine: {'line': b'copying chatter/subscriber_member_function.py -> /home/user/ros_workspaces/lab1/build/chatter/build/lib/chatter\n'}
+[1.132837] (chatter) StdoutLine: {'line': b'running install\n'}
+[1.137018] (chatter) StdoutLine: {'line': b'running install_lib\n'}
+[1.158666] (chatter) StdoutLine: {'line': b'running install_data\n'}
+[1.158841] (chatter) StdoutLine: {'line': b'copying resource/chatter -> /home/user/ros_workspaces/lab1/install/chatter/share/ament_index/resource_index/packages\n'}
+[1.158934] (chatter) StdoutLine: {'line': b'copying package.xml -> /home/user/ros_workspaces/lab1/install/chatter/share/chatter\n'}
+[1.159067] (chatter) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.177950] (chatter) StdoutLine: {'line': b"removing '/home/user/ros_workspaces/lab1/install/chatter/lib/python3.10/site-packages/chatter-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.178248] (chatter) StdoutLine: {'line': b'Copying ../../build/chatter/chatter.egg-info to /home/user/ros_workspaces/lab1/install/chatter/lib/python3.10/site-packages/chatter-0.0.0-py3.10.egg-info\n'}
+[1.179106] (chatter) StdoutLine: {'line': b'running install_scripts\n'}
+[1.201327] (-) TimerEvent: {}
+[1.218898] (chatter) StdoutLine: {'line': b'Installing listener script to /home/user/ros_workspaces/lab1/install/chatter/lib/chatter\n'}
+[1.219143] (chatter) StdoutLine: {'line': b'Installing talker script to /home/user/ros_workspaces/lab1/install/chatter/lib/chatter\n'}
+[1.219562] (chatter) StdoutLine: {'line': b"writing list of installed files to '/home/user/ros_workspaces/lab1/build/chatter/install.log'\n"}
+[1.245721] (chatter) CommandEnded: {'returncode': 0}
+[1.259121] (chatter) JobEnded: {'identifier': 'chatter', 'rc': 0}
+[1.301420] (-) TimerEvent: {}
+[1.401651] (-) TimerEvent: {}
+[1.501950] (-) TimerEvent: {}
+[1.602248] (-) TimerEvent: {}
+[1.702540] (-) TimerEvent: {}
+[1.802845] (-) TimerEvent: {}
+[1.903140] (-) TimerEvent: {}
+[2.003429] (-) TimerEvent: {}
+[2.103718] (-) TimerEvent: {}
+[2.204002] (-) TimerEvent: {}
+[2.304287] (-) TimerEvent: {}
+[2.404584] (-) TimerEvent: {}
+[2.504867] (-) TimerEvent: {}
+[2.605167] (-) TimerEvent: {}
+[2.705509] (-) TimerEvent: {}
+[2.805798] (-) TimerEvent: {}
+[2.906086] (-) TimerEvent: {}
+[3.006372] (-) TimerEvent: {}
+[3.106660] (-) TimerEvent: {}
+[3.206940] (-) TimerEvent: {}
+[3.307257] (-) TimerEvent: {}
+[3.407583] (-) TimerEvent: {}
+[3.507886] (-) TimerEvent: {}
+[3.608217] (-) TimerEvent: {}
+[3.708570] (-) TimerEvent: {}
+[3.808919] (-) TimerEvent: {}
+[3.909292] (-) TimerEvent: {}
+[4.009625] (-) TimerEvent: {}
+[4.109963] (-) TimerEvent: {}
+[4.210816] (-) TimerEvent: {}
+[4.311145] (-) TimerEvent: {}
+[4.411461] (-) TimerEvent: {}
+[4.511788] (-) TimerEvent: {}
+[4.612091] (-) TimerEvent: {}
+[4.712421] (-) TimerEvent: {}
+[4.812739] (-) TimerEvent: {}
+[4.913085] (-) TimerEvent: {}
+[5.013379] (-) TimerEvent: {}
+[5.113671] (-) TimerEvent: {}
+[5.213957] (-) TimerEvent: {}
+[5.314271] (-) TimerEvent: {}
+[5.414572] (-) TimerEvent: {}
+[5.515364] (-) TimerEvent: {}
+[5.615665] (-) TimerEvent: {}
+[5.715911] (-) TimerEvent: {}
+[5.816209] (-) TimerEvent: {}
+[5.916510] (-) TimerEvent: {}
+[5.989887] (my_chatter_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.016610] (-) TimerEvent: {}
+[6.116910] (-) TimerEvent: {}
+[6.217258] (-) TimerEvent: {}
+[6.317542] (-) TimerEvent: {}
+[6.417845] (-) TimerEvent: {}
+[6.518152] (-) TimerEvent: {}
+[6.618523] (-) TimerEvent: {}
+[6.718834] (-) TimerEvent: {}
+[6.819156] (-) TimerEvent: {}
+[6.919511] (-) TimerEvent: {}
+[7.019868] (-) TimerEvent: {}
+[7.120202] (-) TimerEvent: {}
+[7.220501] (-) TimerEvent: {}
+[7.320824] (-) TimerEvent: {}
+[7.421123] (-) TimerEvent: {}
+[7.521462] (-) TimerEvent: {}
+[7.621773] (-) TimerEvent: {}
+[7.722156] (-) TimerEvent: {}
+[7.822458] (-) TimerEvent: {}
+[7.922810] (-) TimerEvent: {}
+[7.924897] (my_chatter_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.942097] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.022934] (-) TimerEvent: {}
+[8.123310] (-) TimerEvent: {}
+[8.217758] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.223402] (-) TimerEvent: {}
+[8.228330] (my_chatter_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.229244] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.306047] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.311093] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.325120] (-) TimerEvent: {}
+[8.425433] (-) TimerEvent: {}
+[8.476321] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.484050] (my_chatter_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.484281] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.485202] (my_chatter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.495600] (my_chatter_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[8.525515] (-) TimerEvent: {}
+[8.625817] (-) TimerEvent: {}
+[8.726156] (-) TimerEvent: {}
+[8.826487] (-) TimerEvent: {}
+[8.926791] (-) TimerEvent: {}
+[9.027106] (-) TimerEvent: {}
+[9.127408] (-) TimerEvent: {}
+[9.227721] (-) TimerEvent: {}
+[9.276826] (my_chatter_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[9.327825] (-) TimerEvent: {}
+[9.428120] (-) TimerEvent: {}
+[9.472997] (my_chatter_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[9.485956] (my_chatter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.507685] (my_chatter_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[9.528211] (-) TimerEvent: {}
+[9.628520] (-) TimerEvent: {}
+[9.728883] (-) TimerEvent: {}
+[9.829259] (-) TimerEvent: {}
+[9.929595] (-) TimerEvent: {}
+[10.029952] (-) TimerEvent: {}
+[10.130309] (-) TimerEvent: {}
+[10.144483] (my_chatter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.230444] (-) TimerEvent: {}
+[10.330808] (-) TimerEvent: {}
+[10.431160] (-) TimerEvent: {}
+[10.531513] (-) TimerEvent: {}
+[10.631838] (-) TimerEvent: {}
+[10.732127] (-) TimerEvent: {}
+[10.832474] (-) TimerEvent: {}
+[10.852938] (my_chatter_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[10.932591] (-) TimerEvent: {}
+[11.032900] (-) TimerEvent: {}
+[11.074630] (my_chatter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.133014] (-) TimerEvent: {}
+[11.233323] (-) TimerEvent: {}
+[11.333606] (-) TimerEvent: {}
+[11.433921] (-) TimerEvent: {}
+[11.518783] (my_chatter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.534015] (-) TimerEvent: {}
+[11.550268] (my_chatter_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[11.556290] (my_chatter_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[11.634114] (-) TimerEvent: {}
+[11.734966] (-) TimerEvent: {}
+[11.833500] (my_chatter_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[11.833726] (my_chatter_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[11.833799] (my_chatter_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[11.833866] (my_chatter_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[11.835028] (-) TimerEvent: {}
+[11.863566] (my_chatter_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[11.935149] (-) TimerEvent: {}
+[12.107162] (-) TimerEvent: {}
+[12.137306] (my_chatter_msgs) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/_core/include\n'}
+[12.147273] (my_chatter_msgs) StdoutLine: {'line': b'-- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)\n'}
+[12.159420] (my_chatter_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[12.207257] (-) TimerEvent: {}
+[12.223226] (my_chatter_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.225675] (my_chatter_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.230085] (my_chatter_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.264544] (my_chatter_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[12.276130] (my_chatter_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros_workspaces/lab1/build/my_chatter_msgs\n'}
+[12.284618] (my_chatter_msgs) CommandEnded: {'returncode': 0}
+[12.285227] (my_chatter_msgs) JobProgress: {'identifier': 'my_chatter_msgs', 'progress': 'build'}
+[12.287115] (my_chatter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros_workspaces/lab1/build/my_chatter_msgs', '--', '-j8', '-l8'], 'cwd': '/home/user/ros_workspaces/lab1/build/my_chatter_msgs', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://3_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '3_xterm'), ('ROBOT_HOSTNAME', ''), ('PWD', '/home/user/ros_workspaces/lab1/build/my_chatter_msgs'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '3_xterm'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://3_xterm:11311'), ('ROS_HOSTNAME', '3_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '1046974'), ('SLOT_PREFIX', 'b385e110-236a-4633-8bf3-2a178787ef76'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25634'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros_workspaces/lab1/src'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20003'), ('_', '/usr/bin/env'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.310520] (-) TimerEvent: {}
+[12.327291] (my_chatter_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[12.344276] (my_chatter_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[12.348589] (my_chatter_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_my_chatter_msgs\n'}
+[12.410630] (-) TimerEvent: {}
+[12.510946] (-) TimerEvent: {}
+[12.611288] (-) TimerEvent: {}
+[12.711621] (-) TimerEvent: {}
+[12.724174] (my_chatter_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[12.749107] (my_chatter_msgs) StdoutLine: {'line': b'creating my_chatter_msgs.egg-info\n'}
+[12.749308] (my_chatter_msgs) StdoutLine: {'line': b'writing my_chatter_msgs.egg-info/PKG-INFO\n'}
+[12.749396] (my_chatter_msgs) StdoutLine: {'line': b'writing dependency_links to my_chatter_msgs.egg-info/dependency_links.txt\n'}
+[12.749479] (my_chatter_msgs) StdoutLine: {'line': b'writing top-level names to my_chatter_msgs.egg-info/top_level.txt\n'}
+[12.749562] (my_chatter_msgs) StdoutLine: {'line': b"writing manifest file 'my_chatter_msgs.egg-info/SOURCES.txt'\n"}
+[12.812078] (-) TimerEvent: {}
+[12.844791] (my_chatter_msgs) StdoutLine: {'line': b"reading manifest file 'my_chatter_msgs.egg-info/SOURCES.txt'\n"}
+[12.846272] (my_chatter_msgs) StdoutLine: {'line': b"writing manifest file 'my_chatter_msgs.egg-info/SOURCES.txt'\n"}
+[12.846503] (my_chatter_msgs) StdoutLine: {'line': b'[  6%] Built target my_chatter_msgs__cpp\n'}
+[12.857244] (my_chatter_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.857533] (my_chatter_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.910057] (my_chatter_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.912181] (-) TimerEvent: {}
+[12.924691] (my_chatter_msgs) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_my_chatter_msgs_egg\n'}
+[12.941394] (my_chatter_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_generator_c.dir/rosidl_generator_c/my_chatter_msgs/msg/detail/timestamp_string__functions.c.o\x1b[0m\n'}
+[13.012423] (-) TimerEvent: {}
+[13.112713] (-) TimerEvent: {}
+[13.213001] (-) TimerEvent: {}
+[13.313333] (-) TimerEvent: {}
+[13.342073] (my_chatter_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_chatter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_chatter_msgs/msg/timestamp_string__type_support.cpp.o\x1b[0m\n'}
+[13.411877] (my_chatter_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_chatter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_chatter_msgs/msg/detail/dds_fastrtps/timestamp_string__type_support.cpp.o\x1b[0m\n'}
+[13.413425] (-) TimerEvent: {}
+[13.418485] (my_chatter_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/my_chatter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_chatter_msgs/msg/detail/timestamp_string__type_support.cpp.o\x1b[0m\n'}
+[13.513541] (-) TimerEvent: {}
+[13.614303] (-) TimerEvent: {}
+[13.714637] (-) TimerEvent: {}
+[13.814992] (-) TimerEvent: {}
+[13.915314] (-) TimerEvent: {}
+[14.015611] (-) TimerEvent: {}
+[14.115919] (-) TimerEvent: {}
+[14.216277] (-) TimerEvent: {}
+[14.316601] (-) TimerEvent: {}
+[14.416892] (-) TimerEvent: {}
+[14.486218] (my_chatter_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32m\x1b[1mLinking C shared library libmy_chatter_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[14.517022] (-) TimerEvent: {}
+[14.525338] (my_chatter_msgs) StdoutLine: {'line': b'[ 32%] Built target my_chatter_msgs__rosidl_generator_c\n'}
+[14.535530] (my_chatter_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.539993] (my_chatter_msgs) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.540280] (my_chatter_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[14.617133] (-) TimerEvent: {}
+[14.717431] (-) TimerEvent: {}
+[14.817768] (-) TimerEvent: {}
+[14.918102] (-) TimerEvent: {}
+[14.930565] (my_chatter_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_chatter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_chatter_msgs/msg/timestamp_string__type_support.cpp.o\x1b[0m\n'}
+[14.969370] (my_chatter_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_chatter_msgs/msg/detail/timestamp_string__type_support.c.o\x1b[0m\n'}
+[14.994884] (my_chatter_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_chatter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_chatter_msgs/msg/detail/timestamp_string__type_support_c.cpp.o\x1b[0m\n'}
+[15.018199] (-) TimerEvent: {}
+[15.083332] (my_chatter_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libmy_chatter_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.110638] (my_chatter_msgs) StdoutLine: {'line': b'[ 54%] Built target my_chatter_msgs__rosidl_typesupport_introspection_c\n'}
+[15.121571] (-) TimerEvent: {}
+[15.221860] (-) TimerEvent: {}
+[15.272919] (my_chatter_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libmy_chatter_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.314939] (my_chatter_msgs) StdoutLine: {'line': b'[ 58%] Built target my_chatter_msgs__rosidl_typesupport_c\n'}
+[15.321955] (-) TimerEvent: {}
+[15.422246] (-) TimerEvent: {}
+[15.522623] (-) TimerEvent: {}
+[15.622941] (-) TimerEvent: {}
+[15.723332] (-) TimerEvent: {}
+[15.823711] (-) TimerEvent: {}
+[15.927160] (-) TimerEvent: {}
+[16.014278] (my_chatter_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libmy_chatter_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[16.027277] (-) TimerEvent: {}
+[16.115756] (my_chatter_msgs) StdoutLine: {'line': b'[ 61%] Built target my_chatter_msgs__rosidl_typesupport_cpp\n'}
+[16.127669] (-) TimerEvent: {}
+[16.228939] (-) TimerEvent: {}
+[16.234387] (my_chatter_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libmy_chatter_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[16.268356] (my_chatter_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libmy_chatter_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.329063] (-) TimerEvent: {}
+[16.342085] (my_chatter_msgs) StdoutLine: {'line': b'[ 67%] Built target my_chatter_msgs__rosidl_typesupport_introspection_cpp\n'}
+[16.350986] (my_chatter_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmy_chatter_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[16.378569] (my_chatter_msgs) StdoutLine: {'line': b'[ 70%] Built target my_chatter_msgs__rosidl_typesupport_fastrtps_c\n'}
+[16.429191] (-) TimerEvent: {}
+[16.436597] (my_chatter_msgs) StdoutLine: {'line': b'[ 70%] Built target my_chatter_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[16.456817] (my_chatter_msgs) StdoutLine: {'line': b'[ 70%] Built target my_chatter_msgs\n'}
+[16.477482] (my_chatter_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[16.529301] (-) TimerEvent: {}
+[16.629629] (-) TimerEvent: {}
+[16.729993] (-) TimerEvent: {}
+[16.830362] (-) TimerEvent: {}
+[16.888113] (my_chatter_msgs) StdoutLine: {'line': b'[ 74%] Built target my_chatter_msgs__py\n'}
+[16.904867] (my_chatter_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_generator_py.dir/rosidl_generator_py/my_chatter_msgs/msg/_timestamp_string_s.c.o\x1b[0m\n'}
+[16.930462] (-) TimerEvent: {}
+[17.030749] (-) TimerEvent: {}
+[17.131061] (-) TimerEvent: {}
+[17.231361] (-) TimerEvent: {}
+[17.331654] (-) TimerEvent: {}
+[17.431947] (-) TimerEvent: {}
+[17.532249] (-) TimerEvent: {}
+[17.632595] (-) TimerEvent: {}
+[17.732903] (-) TimerEvent: {}
+[17.833217] (-) TimerEvent: {}
+[17.933735] (-) TimerEvent: {}
+[18.034038] (-) TimerEvent: {}
+[18.134371] (-) TimerEvent: {}
+[18.234738] (-) TimerEvent: {}
+[18.335100] (-) TimerEvent: {}
+[18.435406] (-) TimerEvent: {}
+[18.535769] (-) TimerEvent: {}
+[18.636104] (-) TimerEvent: {}
+[18.736412] (-) TimerEvent: {}
+[18.836758] (-) TimerEvent: {}
+[18.937051] (-) TimerEvent: {}
+[19.037359] (-) TimerEvent: {}
+[19.137720] (-) TimerEvent: {}
+[19.238064] (-) TimerEvent: {}
+[19.338335] (-) TimerEvent: {}
+[19.438676] (-) TimerEvent: {}
+[19.539001] (-) TimerEvent: {}
+[19.639390] (-) TimerEvent: {}
+[19.739773] (-) TimerEvent: {}
+[19.840117] (-) TimerEvent: {}
+[19.940468] (-) TimerEvent: {}
+[20.040806] (-) TimerEvent: {}
+[20.141107] (-) TimerEvent: {}
+[20.241409] (-) TimerEvent: {}
+[20.341702] (-) TimerEvent: {}
+[20.442005] (-) TimerEvent: {}
+[20.542356] (-) TimerEvent: {}
+[20.642682] (-) TimerEvent: {}
+[20.743031] (-) TimerEvent: {}
+[20.843373] (-) TimerEvent: {}
+[20.943672] (-) TimerEvent: {}
+[21.044009] (-) TimerEvent: {}
+[21.144320] (-) TimerEvent: {}
+[21.244652] (-) TimerEvent: {}
+[21.269617] (my_chatter_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_chatter_msgs/libmy_chatter_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[21.313107] (my_chatter_msgs) StdoutLine: {'line': b'[ 80%] Built target my_chatter_msgs__rosidl_generator_py\n'}
+[21.336555] (my_chatter_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.342691] (my_chatter_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.344507] (my_chatter_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_chatter_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.344723] (-) TimerEvent: {}
+[21.445005] (-) TimerEvent: {}
+[21.510179] (my_chatter_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.516871] (my_chatter_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.545135] (-) TimerEvent: {}
+[21.552018] (my_chatter_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.555734] (my_chatter_msgs) StdoutLine: {'line': b'[100%] Built target my_chatter_msgs__rosidl_typesupport_c__pyext\n'}
+[21.563118] (my_chatter_msgs) StdoutLine: {'line': b'[100%] Built target my_chatter_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[21.586398] (my_chatter_msgs) StdoutLine: {'line': b'[100%] Built target my_chatter_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[21.595538] (my_chatter_msgs) CommandEnded: {'returncode': 0}
+[21.596209] (my_chatter_msgs) JobProgress: {'identifier': 'my_chatter_msgs', 'progress': 'install'}
+[21.604244] (my_chatter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros_workspaces/lab1/build/my_chatter_msgs'], 'cwd': '/home/user/ros_workspaces/lab1/build/my_chatter_msgs', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://3_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '3_xterm'), ('ROBOT_HOSTNAME', ''), ('PWD', '/home/user/ros_workspaces/lab1/build/my_chatter_msgs'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '3_xterm'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://3_xterm:11311'), ('ROS_HOSTNAME', '3_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '1046974'), ('SLOT_PREFIX', 'b385e110-236a-4633-8bf3-2a178787ef76'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25634'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros_workspaces/lab1/src'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20003'), ('_', '/usr/bin/env'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.611537] (my_chatter_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.611694] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/ament_index/resource_index/rosidl_interfaces/my_chatter_msgs\n'}
+[21.611854] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.611948] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.612035] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.612131] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__struct.h\n'}
+[21.612227] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__type_support.h\n'}
+[21.612346] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__functions.h\n'}
+[21.612488] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__functions.c\n'}
+[21.612616] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/timestamp_string.h\n'}
+[21.612736] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.612944] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/library_path.sh\n'}
+[21.613106] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/library_path.dsv\n'}
+[21.613292] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_generator_c.so\n'}
+[21.613616] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_generator_c.so" to ""\n'}
+[21.613710] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.613812] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.613875] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.613954] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__rosidl_typesupport_fastrtps_c.h\n'}
+[21.614017] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.614108] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[21.614439] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.614531] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.614662] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.614718] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.614807] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__rosidl_typesupport_introspection_c.h\n'}
+[21.614871] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__type_support.c\n'}
+[21.614964] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.615049] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_introspection_c.so\n'}
+[21.616011] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.616085] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_c.so\n'}
+[21.616283] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_c.so" to ""\n'}
+[21.616385] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.616536] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.616604] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.616738] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__builder.hpp\n'}
+[21.616852] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__traits.hpp\n'}
+[21.616975] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__struct.hpp\n'}
+[21.617039] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__type_support.hpp\n'}
+[21.617130] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/timestamp_string.hpp\n'}
+[21.617224] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[21.617384] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.617498] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.617588] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.617647] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.617738] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/dds_fastrtps\n'}
+[21.617862] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.618007] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.618312] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[21.618424] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs\n'}
+[21.618555] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg\n'}
+[21.618617] (my_chatter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail\n'}
+[21.618689] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__type_support.cpp\n'}
+[21.618809] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/include/my_chatter_msgs/my_chatter_msgs/msg/detail/timestamp_string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.618930] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[21.619383] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[21.619485] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_cpp.so\n'}
+[21.619798] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[21.619957] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/pythonpath.sh\n'}
+[21.620066] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/pythonpath.dsv\n'}
+[21.620517] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs-0.0.0-py3.10.egg-info\n'}
+[21.620677] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[21.620862] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[21.620999] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[21.621140] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[21.621239] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs\n'}
+[21.621416] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[21.621515] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.621922] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.622074] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.622216] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[21.622342] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg\n'}
+[21.622494] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg/_timestamp_string_s.c\n'}
+[21.622597] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg/_timestamp_string.py\n'}
+[21.623327] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg/__init__.py\n'}
+[21.623441] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/__init__.py\n'}
+[21.623527] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/libmy_chatter_msgs__rosidl_generator_py.so\n'}
+[21.623609] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/_my_chatter_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[21.645761] (-) TimerEvent: {}
+[21.666161] (my_chatter_msgs) StdoutLine: {'line': b"Listing '/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs'...\n"}
+[21.666385] (my_chatter_msgs) StdoutLine: {'line': b"Compiling '/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/__init__.py'...\n"}
+[21.666561] (my_chatter_msgs) StdoutLine: {'line': b"Listing '/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg'...\n"}
+[21.666702] (my_chatter_msgs) StdoutLine: {'line': b"Compiling '/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg/__init__.py'...\n"}
+[21.666830] (my_chatter_msgs) StdoutLine: {'line': b"Compiling '/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/msg/_timestamp_string.py'...\n"}
+[21.671017] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.671346] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.671532] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.671852] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.672036] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.672358] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/local/lib/python3.10/dist-packages/my_chatter_msgs/my_chatter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.672485] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_generator_py.so\n'}
+[21.672765] (my_chatter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros_workspaces/lab1/install/my_chatter_msgs/lib/libmy_chatter_msgs__rosidl_generator_py.so" to ""\n'}
+[21.672909] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/msg/TimestampString.idl\n'}
+[21.673025] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/msg/TimestampString.msg\n'}
+[21.673207] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/ament_index/resource_index/package_run_dependencies/my_chatter_msgs\n'}
+[21.673385] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/ament_index/resource_index/parent_prefix_path/my_chatter_msgs\n'}
+[21.673508] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/ament_prefix_path.sh\n'}
+[21.673653] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/ament_prefix_path.dsv\n'}
+[21.673794] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/path.sh\n'}
+[21.673946] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/environment/path.dsv\n'}
+[21.674086] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/local_setup.bash\n'}
+[21.674225] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/local_setup.sh\n'}
+[21.674381] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/local_setup.zsh\n'}
+[21.674511] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/local_setup.dsv\n'}
+[21.674640] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/package.dsv\n'}
+[21.674813] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/ament_index/resource_index/packages/my_chatter_msgs\n'}
+[21.674997] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_generator_cExport.cmake\n'}
+[21.675166] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[21.676080] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[21.676225] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[21.676385] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[21.676532] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[21.676703] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_cExport.cmake\n'}
+[21.676846] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[21.676998] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_generator_cppExport.cmake\n'}
+[21.677151] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[21.677301] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[21.677456] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[21.677606] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[21.677752] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[21.677912] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[21.678071] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_generator_pyExport.cmake\n'}
+[21.678215] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/export_my_chatter_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[21.678356] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[21.678505] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.678645] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[21.678791] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[21.678926] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[21.679062] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[21.679256] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[21.679418] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgsConfig.cmake\n'}
+[21.679524] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/cmake/my_chatter_msgsConfig-version.cmake\n'}
+[21.679624] (my_chatter_msgs) StdoutLine: {'line': b'-- Installing: /home/user/ros_workspaces/lab1/install/my_chatter_msgs/share/my_chatter_msgs/package.xml\n'}
+[21.681592] (my_chatter_msgs) CommandEnded: {'returncode': 0}
+[21.698136] (my_chatter_msgs) JobEnded: {'identifier': 'my_chatter_msgs', 'rc': 0}
+[21.698976] (-) EventReactorShutdown: {}

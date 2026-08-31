@@ -1,0 +1,6 @@
+{
+  "package_name": "my_chatter_msgs",
+  "non_idl_tuples": [
+    "/home/user/ros_workspaces/lab1/src/my_chatter_msgs:msg/TimestampString.msg"
+  ]
+}
