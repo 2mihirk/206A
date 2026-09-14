@@ -1,0 +1,4 @@
+[console_scripts]
+joint_controller = joint_control.joint_controller:main
+validate_trajectory = joint_control.validate_trajectory:main
+

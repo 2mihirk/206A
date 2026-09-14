@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from straight_line_interface/action/MoveStraight.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module straight_line_interface {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct MoveStraight_Goal {
+      geometry_msgs::msg::Pose target;
+
+      double max_step;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct MoveStraight_Result {
+      boolean success;
+
+      double planned_fraction;
+
+      double dist_to_go;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct MoveStraight_Feedback {
+      double planned_fraction;
+
+      string state;
+    };
+  };
+};

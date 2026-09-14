@@ -1,0 +1,5 @@
+  File "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight_line/straight_line_server.py", line 48
+    'move_straight',
+    ^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+

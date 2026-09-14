@@ -1,0 +1,162 @@
+[2.514s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface -- -j24 -l24
+[3.459s] [  3%] Built target turtle_patrol_interface__cpp
+[3.465s] [  6%] Built target turtle_patrol_interface__rs
+[3.494s] [ 15%] Built target turtle_patrol_interface__rosidl_generator_c
+[4.088s] [ 15%] Built target ament_cmake_python_copy_turtle_patrol_interface
+[4.538s] [ 25%] Built target turtle_patrol_interface__rosidl_typesupport_introspection_cpp
+[4.589s] [ 34%] Built target turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp
+[4.650s] [ 43%] Built target turtle_patrol_interface__rosidl_typesupport_cpp
+[4.673s] [ 62%] Built target turtle_patrol_interface__rosidl_typesupport_c
+[4.678s] [ 62%] Built target turtle_patrol_interface__rosidl_typesupport_introspection_c
+[4.723s] [ 71%] Built target turtle_patrol_interface__rosidl_typesupport_fastrtps_c
+[5.281s] [ 71%] Built target turtle_patrol_interface
+[5.761s] [ 75%] Built target turtle_patrol_interface__py
+[6.133s] [ 81%] Built target turtle_patrol_interface__rosidl_generator_py
+[6.770s] [ 87%] Built target turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext
+[6.821s] [ 93%] Built target turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext
+[6.844s] [100%] Built target turtle_patrol_interface__rosidl_typesupport_c__pyext
+[7.938s] running egg_info
+[7.944s] writing turtle_patrol_interface.egg-info/PKG-INFO
+[7.951s] writing dependency_links to turtle_patrol_interface.egg-info/dependency_links.txt
+[7.960s] writing top-level names to turtle_patrol_interface.egg-info/top_level.txt
+[7.983s] reading manifest file 'turtle_patrol_interface.egg-info/SOURCES.txt'
+[7.989s] writing manifest file 'turtle_patrol_interface.egg-info/SOURCES.txt'
+[8.207s] [100%] Built target ament_cmake_python_build_turtle_patrol_interface_egg
+[8.430s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface -- -j24 -l24
+[8.619s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface
+[8.781s] -- Install configuration: ""
+[8.785s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/ament_index/resource_index/rosidl_interfaces/turtle_patrol_interface
+[8.792s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[8.796s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[8.797s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[8.800s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__type_support.h
+[8.805s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__functions.h
+[8.808s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__functions.c
+[8.809s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__struct.h
+[8.811s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/patrol.h
+[8.819s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg
+[8.819s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg/rosidl_generator_c__visibility_control.h
+[8.825s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/library_path.sh
+[8.828s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/library_path.dsv
+[8.849s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_generator_c.so
+[8.856s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[8.863s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[8.869s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[8.875s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__rosidl_typesupport_fastrtps_c.h
+[8.876s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg
+[8.880s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.888s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_fastrtps_c.so
+[8.898s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[8.899s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[8.903s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[8.905s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__builder.hpp
+[8.907s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__traits.hpp
+[8.911s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__struct.hpp
+[8.914s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__type_support.hpp
+[8.916s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/patrol.hpp
+[8.917s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg
+[8.921s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.922s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[8.925s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg
+[8.927s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.933s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[8.941s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[8.944s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__rosidl_typesupport_fastrtps_cpp.hpp
+[8.946s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/dds_fastrtps
+[8.955s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_fastrtps_cpp.so
+[8.967s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[8.972s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg
+[8.975s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.976s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[8.979s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[8.986s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__rosidl_typesupport_introspection_c.h
+[8.987s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__type_support.c
+[8.993s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_introspection_c.so
+[9.009s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_c.so
+[9.017s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface
+[9.021s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv
+[9.022s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail
+[9.026s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__type_support.cpp
+[9.028s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/include/turtle_patrol_interface/turtle_patrol_interface/srv/detail/patrol__rosidl_typesupport_introspection_cpp.hpp
+[9.036s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_introspection_cpp.so
+[9.051s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_typesupport_cpp.so
+[9.058s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/pythonpath.sh
+[9.062s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/pythonpath.dsv
+[9.064s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface-0.0.0-py3.10.egg-info
+[9.070s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface-0.0.0-py3.10.egg-info/top_level.txt
+[9.143s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.160s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.176s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[9.191s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface
+[9.195s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/__init__.py
+[9.197s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.200s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/libturtle_patrol_interface__rosidl_generator_py.so
+[9.202s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.206s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.207s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.208s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_c.c
+[9.210s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_introspection_c.c
+[9.212s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/srv
+[9.219s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/srv/_patrol.py
+[9.220s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/srv/__init__.py
+[9.221s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/srv/_patrol_s.c
+[9.584s] Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface'...
+[9.584s] Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/srv'...
+[9.603s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.622s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.637s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/local/lib/python3.10/dist-packages/turtle_patrol_interface/turtle_patrol_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.651s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/lib/libturtle_patrol_interface__rosidl_generator_py.so
+[9.664s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/ament_index/resource_index/rust_packages/turtle_patrol_interface
+[9.667s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust
+[9.671s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/build.rs
+[9.675s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/Cargo.toml
+[9.677s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/src
+[9.679s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/src/srv
+[9.684s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/src/srv/rmw.rs
+[9.687s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/src/srv.rs
+[9.687s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/rust/src/lib.rs
+[9.692s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/srv/Patrol.idl
+[9.694s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/srv/Patrol.srv
+[9.695s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/srv/Patrol_Request.msg
+[9.698s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/srv/Patrol_Response.msg
+[9.701s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/ament_index/resource_index/package_run_dependencies/turtle_patrol_interface
+[9.704s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/ament_index/resource_index/parent_prefix_path/turtle_patrol_interface
+[9.706s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/ament_prefix_path.sh
+[9.708s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/ament_prefix_path.dsv
+[9.712s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/path.sh
+[9.717s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/environment/path.dsv
+[9.718s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/local_setup.bash
+[9.720s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/local_setup.sh
+[9.722s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/local_setup.zsh
+[9.725s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/local_setup.dsv
+[9.729s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/package.dsv
+[9.746s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/ament_index/resource_index/packages/turtle_patrol_interface
+[9.757s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_generator_cExport.cmake
+[9.760s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_generator_cExport-noconfig.cmake
+[9.768s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[9.773s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.780s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_generator_cppExport.cmake
+[9.788s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.793s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.800s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_introspection_cExport.cmake
+[9.805s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.815s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_cExport.cmake
+[9.821s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_cExport-noconfig.cmake
+[9.826s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_introspection_cppExport.cmake
+[9.832s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.838s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_cppExport.cmake
+[9.843s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[9.854s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_generator_pyExport.cmake
+[9.858s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/export_turtle_patrol_interface__rosidl_generator_pyExport-noconfig.cmake
+[9.860s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/rosidl_cmake-extras.cmake
+[9.863s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.863s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.866s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[9.868s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/ament_cmake_export_targets-extras.cmake
+[9.871s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.875s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.877s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[9.882s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interfaceConfig.cmake
+[9.884s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/cmake/turtle_patrol_interfaceConfig-version.cmake
+[9.885s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol_interface/share/turtle_patrol_interface/package.xml
+[9.913s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface

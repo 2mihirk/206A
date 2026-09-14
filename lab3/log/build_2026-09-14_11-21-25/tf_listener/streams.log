@@ -1,0 +1,20 @@
+[1.376s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/tf_listener': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tf_listener build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/install.log --install-scripts $base/lib/tf_listener --single-version-externally-managed install_data
+[1.583s] running egg_info
+[1.584s] writing ../../build/tf_listener/tf_listener.egg-info/PKG-INFO
+[1.588s] writing dependency_links to ../../build/tf_listener/tf_listener.egg-info/dependency_links.txt
+[1.591s] writing entry points to ../../build/tf_listener/tf_listener.egg-info/entry_points.txt
+[1.594s] writing requirements to ../../build/tf_listener/tf_listener.egg-info/requires.txt
+[1.597s] writing top-level names to ../../build/tf_listener/tf_listener.egg-info/top_level.txt
+[1.605s] reading manifest file '../../build/tf_listener/tf_listener.egg-info/SOURCES.txt'
+[1.607s] writing manifest file '../../build/tf_listener/tf_listener.egg-info/SOURCES.txt'
+[1.610s] running build
+[1.610s] running build_py
+[1.613s] running install
+[1.613s] running install_lib
+[1.617s] running install_data
+[1.619s] running install_egg_info
+[1.620s] removing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages/tf_listener-0.0.0-py3.10.egg-info' (and everything under it)
+[1.631s] Copying ../../build/tf_listener/tf_listener.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages/tf_listener-0.0.0-py3.10.egg-info
+[1.669s] running install_scripts
+[1.689s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/install.log'
+[1.858s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/tf_listener' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tf_listener build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/tf_listener/install.log --install-scripts $base/lib/tf_listener --single-version-externally-managed install_data

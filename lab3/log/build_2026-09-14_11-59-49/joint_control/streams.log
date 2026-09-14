@@ -1,0 +1,21 @@
+[1.469s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/joint_control': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data
+[1.686s] running egg_info
+[1.688s] writing ../../build/joint_control/joint_control.egg-info/PKG-INFO
+[1.691s] writing dependency_links to ../../build/joint_control/joint_control.egg-info/dependency_links.txt
+[1.695s] writing entry points to ../../build/joint_control/joint_control.egg-info/entry_points.txt
+[1.698s] writing requirements to ../../build/joint_control/joint_control.egg-info/requires.txt
+[1.701s] writing top-level names to ../../build/joint_control/joint_control.egg-info/top_level.txt
+[1.706s] reading manifest file '../../build/joint_control/joint_control.egg-info/SOURCES.txt'
+[1.709s] writing manifest file '../../build/joint_control/joint_control.egg-info/SOURCES.txt'
+[1.712s] running build
+[1.712s] running build_py
+[1.714s] running install
+[1.714s] running install_lib
+[1.717s] running install_data
+[1.718s] running install_egg_info
+[1.720s] removing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.735s] Copying ../../build/joint_control/joint_control.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control-0.0.0-py3.10.egg-info
+[1.773s] running install_scripts
+[1.801s] Installing validate_trajectory script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/joint_control
+[1.805s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log'
+[1.823s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/joint_control' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d6ca4caf9c797fda4c30.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "turtle_patrol_interface__py",
+					"jsonFile" : "directory-turtle_patrol_interface__py-29e9da60315df2570e20.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface/turtle_patrol_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "turtle_patrol_interface__rs",
+					"jsonFile" : "directory-turtle_patrol_interface__rs-4f3665a0843c1794225a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface/turtle_patrol_interface__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "turtle_patrol_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_turtle_patrol_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_turtle_patrol_interface_egg-3c63d707598679687aea.json",
+					"name" : "ament_cmake_python_build_turtle_patrol_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_turtle_patrol_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_turtle_patrol_interface-3f7df70880a83172f215.json",
+					"name" : "ament_cmake_python_copy_turtle_patrol_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface-91107ed1bbe5c0991484.json",
+					"name" : "turtle_patrol_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__cpp-a74c30acd17b2d9d8146.json",
+					"name" : "turtle_patrol_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "turtle_patrol_interface__py::@a09376ddd4c8a9a86d4e",
+					"jsonFile" : "target-turtle_patrol_interface__py-ca8a2086aa1d7bf37739.json",
+					"name" : "turtle_patrol_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_generator_c-d523236b8eae0deb2132.json",
+					"name" : "turtle_patrol_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_generator_py-74d4f3679a6bc50fa9ab.json",
+					"name" : "turtle_patrol_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_c-b590001183e92fbf12fb.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_c__pyext-202960f1301639a0fc60.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_cpp-dac225742d209e3c00b3.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_fastrtps_c-b4c3328641461640bb76.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext-a08eda5adecc3861bb4a.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp-2abbde06ef0d0a6b4a7c.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_introspection_c-178fbaa9b6f75875b352.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext-eee2866ff2da658e7ae2.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface__rosidl_typesupport_introspection_cpp-b01cdf148ec8d9d15051.json",
+					"name" : "turtle_patrol_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "turtle_patrol_interface__rs::@048d7989397d300043ef",
+					"jsonFile" : "target-turtle_patrol_interface__rs-7e6cdf544f3942441d03.json",
+					"name" : "turtle_patrol_interface__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_patrol_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_patrol_interface_uninstall-b85d14ceaf0d04164b42.json",
+					"name" : "turtle_patrol_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-477c0ee0ad1fb48a2eb6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/build/turtle_patrol_interface",
+		"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/src/turtle_patrol_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

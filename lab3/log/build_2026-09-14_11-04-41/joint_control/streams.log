@@ -1,0 +1,43 @@
+[2.634s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/joint_control': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data
+[2.823s] running egg_info
+[2.824s] creating ../../build/joint_control/joint_control.egg-info
+[2.826s] writing ../../build/joint_control/joint_control.egg-info/PKG-INFO
+[2.833s] writing dependency_links to ../../build/joint_control/joint_control.egg-info/dependency_links.txt
+[2.837s] writing entry points to ../../build/joint_control/joint_control.egg-info/entry_points.txt
+[2.840s] writing requirements to ../../build/joint_control/joint_control.egg-info/requires.txt
+[2.842s] writing top-level names to ../../build/joint_control/joint_control.egg-info/top_level.txt
+[2.845s] writing manifest file '../../build/joint_control/joint_control.egg-info/SOURCES.txt'
+[2.851s] reading manifest file '../../build/joint_control/joint_control.egg-info/SOURCES.txt'
+[2.853s] writing manifest file '../../build/joint_control/joint_control.egg-info/SOURCES.txt'
+[2.854s] running build
+[2.854s] running build_py
+[2.854s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build
+[2.856s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib
+[2.858s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control
+[2.861s] copying joint_control/joint_controller.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control
+[2.865s] copying joint_control/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control
+[2.869s] copying joint_control/moveit_controller.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control
+[2.872s] copying joint_control/validate_trajectory.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control
+[2.876s] running install
+[2.877s] running install_lib
+[2.880s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control
+[2.883s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control/joint_controller.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control
+[2.890s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control/validate_trajectory.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control
+[2.894s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control/moveit_controller.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control
+[2.898s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build/lib/joint_control/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control
+[2.904s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control/joint_controller.py to joint_controller.cpython-310.pyc
+[2.915s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control/validate_trajectory.py to validate_trajectory.cpython-310.pyc
+[2.923s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control/moveit_controller.py to moveit_controller.cpython-310.pyc
+[2.930s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control/__init__.py to __init__.cpython-310.pyc
+[2.935s] running install_data
+[2.937s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index
+[2.938s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index
+[2.939s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index/packages
+[2.943s] copying resource/joint_control -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index/packages
+[2.948s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/joint_control
+[2.953s] running install_egg_info
+[2.959s] Copying ../../build/joint_control/joint_control.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint_control-0.0.0-py3.10.egg-info
+[3.001s] running install_scripts
+[3.031s] Installing validate_trajectory script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/joint_control
+[3.036s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log'
+[3.204s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/joint_control' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data

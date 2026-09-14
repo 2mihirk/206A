@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtle_patrol_interface/srv/Patrol.srv
+// generated code does not contain a copyright notice
+
+
+module turtle_patrol_interface {
+  module srv {
+    struct Patrol_Request {
+      string turtle_name;
+
+      float vel;
+
+      float omega;
+
+      float x;
+
+      float y;
+
+      float theta;
+    };
+    struct Patrol_Response {
+      boolean success;
+
+      string messages;
+    };
+  };
+};

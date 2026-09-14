@@ -1,0 +1,3 @@
+[console_scripts]
+straight_line_server = straight_line.straight_line_server:main
+

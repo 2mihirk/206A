@@ -1,0 +1,5 @@
+  File "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/install/turtle_patrol/lib/python3.10/site-packages/turtle_patrol/multi_patrol_client.py", line 60
+    except Exception as e:
+    ^^^^^^
+SyntaxError: invalid syntax
+

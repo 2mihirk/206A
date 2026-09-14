@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f63332e343046ea9fb29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "straight_line_interface__py",
+					"jsonFile" : "directory-straight_line_interface__py-05507524eacc1ab6f3f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface/straight_line_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "straight_line_interface__rs",
+					"jsonFile" : "directory-straight_line_interface__rs-678ac0156da7f1bdf289.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface/straight_line_interface__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "straight_line_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_straight_line_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_straight_line_interface_egg-29285c029b5a678017e3.json",
+					"name" : "ament_cmake_python_build_straight_line_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_straight_line_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_straight_line_interface-04db5e426018776a8c3f.json",
+					"name" : "ament_cmake_python_copy_straight_line_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface-ef403aba2ba2481d981d.json",
+					"name" : "straight_line_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__cpp-eb5260df364a35c95844.json",
+					"name" : "straight_line_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "straight_line_interface__py::@5eb2c5bac6ad22b36e48",
+					"jsonFile" : "target-straight_line_interface__py-6b122a2d1a669c171f4e.json",
+					"name" : "straight_line_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_generator_c-b977e03bb4c4052e7312.json",
+					"name" : "straight_line_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_generator_py-8aa3b25b4b85c2522cee.json",
+					"name" : "straight_line_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_c-500eb3c1d828e56b071a.json",
+					"name" : "straight_line_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_c__pyext-469105569fff2391984c.json",
+					"name" : "straight_line_interface__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_cpp-0021eb7e771d5589acf3.json",
+					"name" : "straight_line_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_fastrtps_c-db67dd9825ffa94b1df4.json",
+					"name" : "straight_line_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_fastrtps_c__pyext-e0e98f05181fb849280e.json",
+					"name" : "straight_line_interface__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_fastrtps_cpp-123ec29b75cb38869af6.json",
+					"name" : "straight_line_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_introspection_c-758f9274b16f28a88845.json",
+					"name" : "straight_line_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_introspection_c__pyext-67c5f14f5735629400d5.json",
+					"name" : "straight_line_interface__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface__rosidl_typesupport_introspection_cpp-35d209d3414f53c20cb6.json",
+					"name" : "straight_line_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "straight_line_interface__rs::@7471ee4444c1dbe31f8e",
+					"jsonFile" : "target-straight_line_interface__rs-dce2c058bcc4300e7e62.json",
+					"name" : "straight_line_interface__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "straight_line_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-straight_line_interface_uninstall-cd28c3f2116f58de709f.json",
+					"name" : "straight_line_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cdb1102dc237865216c9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface",
+		"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/straight_line_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

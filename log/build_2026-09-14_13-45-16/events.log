@@ -1,0 +1,456 @@
+[0.000000] (-) TimerEvent: {}
+[0.000371] (-) JobUnselected: {'identifier': 'bar'}
+[0.000458] (-) JobUnselected: {'identifier': 'chatter'}
+[0.000616] (-) JobUnselected: {'identifier': 'foo'}
+[0.000668] (-) JobUnselected: {'identifier': 'forward_kinematics'}
+[0.000717] (-) JobUnselected: {'identifier': 'joint_control'}
+[0.000782] (-) JobUnselected: {'identifier': 'lab2_turtlesim'}
+[0.000849] (-) JobUnselected: {'identifier': 'my_chatter'}
+[0.000899] (-) JobUnselected: {'identifier': 'my_chatter_msgs'}
+[0.000949] (-) JobUnselected: {'identifier': 'ros2_aruco'}
+[0.001018] (-) JobUnselected: {'identifier': 'ros2_aruco_interfaces'}
+[0.001068] (-) JobUnselected: {'identifier': 'tf_listener'}
+[0.001230] (-) JobUnselected: {'identifier': 'turtle_patrol'}
+[0.002307] (-) JobUnselected: {'identifier': 'turtle_patrol_interface'}
+[0.002363] (-) JobUnselected: {'identifier': 'turtlebot_controller'}
+[0.002426] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.002480] (straight_line_interface) JobQueued: {'identifier': 'straight_line_interface', 'dependencies': OrderedDict()}
+[0.002539] (straight_line) JobQueued: {'identifier': 'straight_line', 'dependencies': OrderedDict([('straight_line_interface', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface')])}
+[0.003888] (straight_line_interface) JobStarted: {'identifier': 'straight_line_interface'}
+[0.041393] (straight_line_interface) JobProgress: {'identifier': 'straight_line_interface', 'progress': 'cmake'}
+[0.054367] (straight_line_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/straight_line_interface', '-DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-aej'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-aej'), ('OLDPWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.101'), ('MANAGERPID', '107037'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '107037'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install:/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-aej'), ('MASTER', 'ee106a'), ('WINDOWID', '31457286'), ('JOURNAL_STREAM', '8:858859'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-aej'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '3'), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-7:@/tmp/.ICE-unix/107122,unix/c105-7:/tmp/.ICE-unix/107122'), ('INVOCATION_ID', 'cb0846482c304853a89b0820de4d3b9d'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90978'), ('DISPLAY', ':2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90978/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90978/keyring/ssh'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'r2d2'), ('GDMSESSION', 'mate'), ('RUNAS', '/share/b/runas/x86_64'), ('GPG_AGENT_INFO', '/run/user/90978/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-aej/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('CMAKE_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('QT_FONT_DPI', '122')]), 'shell': False}
+[0.097586] (-) TimerEvent: {}
+[0.197870] (-) TimerEvent: {}
+[0.234094] (straight_line_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.297964] (-) TimerEvent: {}
+[0.373071] (straight_line_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.398065] (-) TimerEvent: {}
+[0.443664] (straight_line_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.498164] (-) TimerEvent: {}
+[0.598522] (-) TimerEvent: {}
+[0.698921] (-) TimerEvent: {}
+[0.767075] (straight_line_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.782685] (straight_line_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.783053] (straight_line_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.784021] (straight_line_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.798982] (-) TimerEvent: {}
+[0.840732] (straight_line_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.899055] (-) TimerEvent: {}
+[0.999249] (-) TimerEvent: {}
+[1.099503] (-) TimerEvent: {}
+[1.140034] (straight_line_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.152897] (straight_line_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.153422] (straight_line_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.154176] (straight_line_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.199568] (-) TimerEvent: {}
+[1.211860] (straight_line_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.299652] (-) TimerEvent: {}
+[1.399861] (-) TimerEvent: {}
+[1.500095] (-) TimerEvent: {}
+[1.550776] (straight_line_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.600205] (-) TimerEvent: {}
+[1.700617] (-) TimerEvent: {}
+[1.801052] (-) TimerEvent: {}
+[1.901462] (-) TimerEvent: {}
+[2.001873] (-) TimerEvent: {}
+[2.083880] (straight_line_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.101958] (-) TimerEvent: {}
+[2.202297] (-) TimerEvent: {}
+[2.302619] (-) TimerEvent: {}
+[2.341307] (straight_line_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.389468] (straight_line_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.402681] (-) TimerEvent: {}
+[2.444355] (straight_line_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.502804] (-) TimerEvent: {}
+[2.506569] (straight_line_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.593789] (straight_line_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.602863] (-) TimerEvent: {}
+[2.701664] (straight_line_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.702998] (-) TimerEvent: {}
+[2.803407] (-) TimerEvent: {}
+[2.903841] (-) TimerEvent: {}
+[3.004251] (-) TimerEvent: {}
+[3.104621] (-) TimerEvent: {}
+[3.205009] (-) TimerEvent: {}
+[3.305398] (-) TimerEvent: {}
+[3.405764] (-) TimerEvent: {}
+[3.506073] (-) TimerEvent: {}
+[3.606369] (-) TimerEvent: {}
+[3.636281] (straight_line_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.706485] (-) TimerEvent: {}
+[3.806900] (-) TimerEvent: {}
+[3.907286] (-) TimerEvent: {}
+[4.007625] (-) TimerEvent: {}
+[4.108024] (-) TimerEvent: {}
+[4.208401] (-) TimerEvent: {}
+[4.308837] (-) TimerEvent: {}
+[4.409225] (-) TimerEvent: {}
+[4.509562] (-) TimerEvent: {}
+[4.609828] (-) TimerEvent: {}
+[4.710220] (-) TimerEvent: {}
+[4.810618] (-) TimerEvent: {}
+[4.911006] (-) TimerEvent: {}
+[5.011434] (-) TimerEvent: {}
+[5.111860] (-) TimerEvent: {}
+[5.212242] (-) TimerEvent: {}
+[5.312614] (-) TimerEvent: {}
+[5.413034] (-) TimerEvent: {}
+[5.513472] (-) TimerEvent: {}
+[5.613880] (-) TimerEvent: {}
+[5.714220] (-) TimerEvent: {}
+[5.814618] (-) TimerEvent: {}
+[5.823808] (straight_line_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.914731] (-) TimerEvent: {}
+[6.015114] (-) TimerEvent: {}
+[6.115516] (-) TimerEvent: {}
+[6.215918] (-) TimerEvent: {}
+[6.316187] (-) TimerEvent: {}
+[6.416613] (-) TimerEvent: {}
+[6.516949] (-) TimerEvent: {}
+[6.565135] (straight_line_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.597487] (straight_line_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.615426] (straight_line_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.617036] (-) TimerEvent: {}
+[6.686861] (straight_line_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[6.687258] (straight_line_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.688294] (straight_line_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.690358] (straight_line_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[6.717167] (-) TimerEvent: {}
+[6.742346] (straight_line_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.817259] (-) TimerEvent: {}
+[6.917608] (-) TimerEvent: {}
+[7.017960] (-) TimerEvent: {}
+[7.118346] (-) TimerEvent: {}
+[7.218763] (-) TimerEvent: {}
+[7.319133] (-) TimerEvent: {}
+[7.419532] (-) TimerEvent: {}
+[7.519915] (-) TimerEvent: {}
+[7.561819] (straight_line_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.620011] (-) TimerEvent: {}
+[7.720256] (-) TimerEvent: {}
+[7.820503] (-) TimerEvent: {}
+[7.920716] (-) TimerEvent: {}
+[8.020940] (-) TimerEvent: {}
+[8.121139] (-) TimerEvent: {}
+[8.156762] (straight_line_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.166984] (straight_line_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.221223] (-) TimerEvent: {}
+[8.294247] (straight_line_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.321299] (-) TimerEvent: {}
+[8.421498] (-) TimerEvent: {}
+[8.521747] (-) TimerEvent: {}
+[8.622135] (-) TimerEvent: {}
+[8.722495] (-) TimerEvent: {}
+[8.822935] (-) TimerEvent: {}
+[8.923314] (-) TimerEvent: {}
+[9.023612] (-) TimerEvent: {}
+[9.123967] (-) TimerEvent: {}
+[9.224181] (-) TimerEvent: {}
+[9.324386] (-) TimerEvent: {}
+[9.333239] (straight_line_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[9.424505] (-) TimerEvent: {}
+[9.524820] (-) TimerEvent: {}
+[9.578734] (straight_line_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface\n'}
+[9.588266] (straight_line_interface) CommandEnded: {'returncode': 0}
+[9.588975] (straight_line_interface) JobProgress: {'identifier': 'straight_line_interface', 'progress': 'build'}
+[9.590043] (straight_line_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface', '--', '-j32', '-l32'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-aej'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-aej'), ('OLDPWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.101'), ('MANAGERPID', '107037'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '107037'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install:/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-aej'), ('MASTER', 'ee106a'), ('WINDOWID', '31457286'), ('JOURNAL_STREAM', '8:858859'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-aej'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '3'), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-7:@/tmp/.ICE-unix/107122,unix/c105-7:/tmp/.ICE-unix/107122'), ('INVOCATION_ID', 'cb0846482c304853a89b0820de4d3b9d'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90978'), ('DISPLAY', ':2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90978/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90978/keyring/ssh'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'r2d2'), ('GDMSESSION', 'mate'), ('RUNAS', '/share/b/runas/x86_64'), ('GPG_AGENT_INFO', '/run/user/90978/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-aej/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('CMAKE_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('QT_FONT_DPI', '122')]), 'shell': False}
+[9.624907] (-) TimerEvent: {}
+[9.708781] (straight_line_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.724995] (-) TimerEvent: {}
+[9.736193] (straight_line_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.737121] (straight_line_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[9.748195] (straight_line_interface) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_straight_line_interface\n'}
+[9.825088] (-) TimerEvent: {}
+[9.925322] (-) TimerEvent: {}
+[9.990529] (straight_line_interface) StdoutLine: {'line': b'running egg_info\n'}
+[9.991474] (straight_line_interface) StdoutLine: {'line': b'creating straight_line_interface.egg-info\n'}
+[9.994608] (straight_line_interface) StdoutLine: {'line': b'writing straight_line_interface.egg-info/PKG-INFO\n'}
+[9.997912] (straight_line_interface) StdoutLine: {'line': b'writing dependency_links to straight_line_interface.egg-info/dependency_links.txt\n'}
+[10.001483] (straight_line_interface) StdoutLine: {'line': b'writing top-level names to straight_line_interface.egg-info/top_level.txt\n'}
+[10.004900] (straight_line_interface) StdoutLine: {'line': b"writing manifest file 'straight_line_interface.egg-info/SOURCES.txt'\n"}
+[10.005891] (straight_line_interface) StdoutLine: {'line': b'[  9%] Built target straight_line_interface__rs\n'}
+[10.010653] (straight_line_interface) StdoutLine: {'line': b"reading manifest file 'straight_line_interface.egg-info/SOURCES.txt'\n"}
+[10.011567] (straight_line_interface) StdoutLine: {'line': b"writing manifest file 'straight_line_interface.egg-info/SOURCES.txt'\n"}
+[10.025414] (-) TimerEvent: {}
+[10.037722] (straight_line_interface) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_straight_line_interface_egg\n'}
+[10.063970] (straight_line_interface) StdoutLine: {'line': b'[  9%] Built target straight_line_interface__cpp\n'}
+[10.087878] (straight_line_interface) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.088049] (straight_line_interface) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.088118] (straight_line_interface) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_generator_c.dir/rosidl_generator_c/straight_line_interface/action/detail/move_straight__functions.c.o\x1b[0m\n'}
+[10.089121] (straight_line_interface) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.125499] (-) TimerEvent: {}
+[10.216538] (straight_line_interface) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libstraight_line_interface__rosidl_generator_c.so\x1b[0m\n'}
+[10.225572] (-) TimerEvent: {}
+[10.281979] (straight_line_interface) StdoutLine: {'line': b'[ 25%] Built target straight_line_interface__rosidl_generator_c\n'}
+[10.304888] (straight_line_interface) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.305378] (straight_line_interface) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.306278] (straight_line_interface) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.323452] (straight_line_interface) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/straight_line_interface/action/move_straight__type_support.cpp.o\x1b[0m\n'}
+[10.325642] (-) TimerEvent: {}
+[10.391100] (straight_line_interface) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/straight_line_interface/action/detail/move_straight__type_support.cpp.o\x1b[0m\n'}
+[10.418352] (straight_line_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/straight_line_interface/action/detail/dds_fastrtps/move_straight__type_support.cpp.o\x1b[0m\n'}
+[10.425724] (-) TimerEvent: {}
+[10.525950] (-) TimerEvent: {}
+[10.536480] (straight_line_interface) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/straight_line_interface/action/move_straight__type_support.cpp.o\x1b[0m\n'}
+[10.605024] (straight_line_interface) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.614677] (straight_line_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/straight_line_interface/action/detail/move_straight__type_support.c.o\x1b[0m\n'}
+[10.626037] (-) TimerEvent: {}
+[10.626820] (straight_line_interface) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/straight_line_interface/action/detail/move_straight__type_support_c.cpp.o\x1b[0m\n'}
+[10.653870] (straight_line_interface) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.678975] (straight_line_interface) StdoutLine: {'line': b'[ 59%] Built target straight_line_interface__rosidl_typesupport_c\n'}
+[10.691721] (straight_line_interface) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libstraight_line_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.716924] (straight_line_interface) StdoutLine: {'line': b'[ 62%] Built target straight_line_interface__rosidl_typesupport_cpp\n'}
+[10.726127] (-) TimerEvent: {}
+[10.752252] (straight_line_interface) StdoutLine: {'line': b'[ 62%] Built target straight_line_interface__rosidl_typesupport_introspection_c\n'}
+[10.817979] (straight_line_interface) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.826208] (-) TimerEvent: {}
+[10.862570] (straight_line_interface) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.906336] (straight_line_interface) StdoutLine: {'line': b'[ 68%] Built target straight_line_interface__rosidl_typesupport_introspection_cpp\n'}
+[10.926299] (-) TimerEvent: {}
+[10.952687] (straight_line_interface) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.956800] (straight_line_interface) StdoutLine: {'line': b'[ 71%] Built target straight_line_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[11.026393] (-) TimerEvent: {}
+[11.047581] (straight_line_interface) StdoutLine: {'line': b'[ 71%] Built target straight_line_interface__rosidl_typesupport_fastrtps_c\n'}
+[11.082200] (straight_line_interface) StdoutLine: {'line': b'[ 71%] Built target straight_line_interface\n'}
+[11.113277] (straight_line_interface) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.126517] (-) TimerEvent: {}
+[11.226888] (-) TimerEvent: {}
+[11.327073] (-) TimerEvent: {}
+[11.427266] (-) TimerEvent: {}
+[11.527456] (-) TimerEvent: {}
+[11.627654] (-) TimerEvent: {}
+[11.658759] (straight_line_interface) StdoutLine: {'line': b'[ 75%] Built target straight_line_interface__py\n'}
+[11.709981] (straight_line_interface) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_generator_py.dir/rosidl_generator_py/straight_line_interface/action/_move_straight_s.c.o\x1b[0m\n'}
+[11.727745] (-) TimerEvent: {}
+[11.827993] (-) TimerEvent: {}
+[11.852075] (straight_line_interface) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/straight_line_interface/libstraight_line_interface__rosidl_generator_py.so\x1b[0m\n'}
+[11.916365] (straight_line_interface) StdoutLine: {'line': b'[ 81%] Built target straight_line_interface__rosidl_generator_py\n'}
+[11.928079] (-) TimerEvent: {}
+[11.955177] (straight_line_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[11.955350] (straight_line_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.956096] (straight_line_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.028169] (-) TimerEvent: {}
+[12.067287] (straight_line_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.067983] (straight_line_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.077245] (straight_line_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.128274] (-) TimerEvent: {}
+[12.151491] (straight_line_interface) StdoutLine: {'line': b'[100%] Built target straight_line_interface__rosidl_typesupport_c__pyext\n'}
+[12.152737] (straight_line_interface) StdoutLine: {'line': b'[100%] Built target straight_line_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.153774] (straight_line_interface) StdoutLine: {'line': b'[100%] Built target straight_line_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[12.212738] (straight_line_interface) CommandEnded: {'returncode': 0}
+[12.214745] (straight_line_interface) JobProgress: {'identifier': 'straight_line_interface', 'progress': 'install'}
+[12.228365] (-) TimerEvent: {}
+[12.244290] (straight_line_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface', 'env': OrderedDict([('ARCH', 'x86_64'), ('QT_SCALE_FACTOR', '1'), ('USER', 'ee106a-aej'), ('HOSTNAME', 'ros2'), ('XDG_SESSION_TYPE', 'x11'), ('MASTERDIR', '/home/ff/ee106a'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('XDG_CACHE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc/ee106a/fa26/class/ee106a-aej'), ('OLDPWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('EE106_UR_ROBOT_IP', '192.168.1.101'), ('MANAGERPID', '107037'), ('DISTROBOX_ENTER_PATH', '/usr/local/bin/distrobox-enter'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '107037'), ('NNTPSERVER', 'news.csua.berkeley.edu'), ('VISUAL', 'emacs'), ('XDG_STATE_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install:/home/ff/ee106a/robot_workspaces/ur/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ee106a-aej'), ('MASTER', 'ee106a'), ('WINDOWID', '31457286'), ('JOURNAL_STREAM', '8:858859'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('USERNAME', 'ee106a-aej'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '3'), ('PATH', '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all'), ('SESSION_MANAGER', 'local/c105-7:@/tmp/.ICE-unix/107122,unix/c105-7:/tmp/.ICE-unix/107122'), ('INVOCATION_ID', 'cb0846482c304853a89b0820de4d3b9d'), ('OS', 'Linux'), ('XDG_RUNTIME_DIR', '/run/user/90978'), ('DISPLAY', ':2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_DATA_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.local/share'), ('XDG_CONFIG_HOME', '/home/cc/ee106a/fa26/class/ee106a-aej/.config'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/run/user/90978/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/90978/keyring/ssh'), ('ROS_DOMAIN_ID', '27'), ('AMENT_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('EE106_UR_ROBOT_NAME', 'r2d2'), ('GDMSESSION', 'mate'), ('RUNAS', '/share/b/runas/x86_64'), ('GPG_AGENT_INFO', '/run/user/90978/gnupg/S.gpg-agent:0:1'), ('CONFIG_SHELL', '/usr/bin/ksh'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line_interface'), ('EE106_ENV_SETUP', 'ur_ros2'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-aej/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share'), ('PYTHONPATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('MANPATH', '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:'), ('VTE_VERSION', '6800'), ('EDITOR', 'emacs'), ('CMAKE_PREFIX_PATH', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble'), ('QT_FONT_DPI', '122')]), 'shell': False}
+[12.260338] (straight_line_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.270126] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/ament_index/resource_index/rosidl_interfaces/straight_line_interface\n'}
+[12.276868] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.284939] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.290405] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.296174] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__functions.c\n'}
+[12.302973] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__struct.h\n'}
+[12.309951] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__functions.h\n'}
+[12.316416] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.h\n'}
+[12.322979] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/move_straight.h\n'}
+[12.328440] (-) TimerEvent: {}
+[12.329910] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg\n'}
+[12.335637] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.347567] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/library_path.sh\n'}
+[12.356938] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/library_path.dsv\n'}
+[12.366669] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_c.so\n'}
+[12.376312] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_c.so" to ""\n'}
+[12.377322] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.378909] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg\n'}
+[12.381024] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.387918] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.390568] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.392467] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_fastrtps_c.h\n'}
+[12.400632] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[12.411405] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.412379] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.414298] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg\n'}
+[12.416272] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.423739] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.425464] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/move_straight.hpp\n'}
+[12.428497] (-) TimerEvent: {}
+[12.432396] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.434320] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__builder.hpp\n'}
+[12.441320] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__struct.hpp\n'}
+[12.448007] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__traits.hpp\n'}
+[12.454837] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.hpp\n'}
+[12.461215] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.463004] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.464899] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.466468] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.473283] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/dds_fastrtps\n'}
+[12.478863] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg\n'}
+[12.481120] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.489803] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.499758] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.501145] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.503015] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg\n'}
+[12.505216] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.512464] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.514396] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.515986] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.c\n'}
+[12.522907] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_introspection_c.h\n'}
+[12.528596] (-) TimerEvent: {}
+[12.529880] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_c.so\n'}
+[12.539253] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.541026] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_c.so\n'}
+[12.551042] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_c.so" to ""\n'}
+[12.552002] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface\n'}
+[12.553969] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action\n'}
+[12.556024] (straight_line_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail\n'}
+[12.557817] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.cpp\n'}
+[12.565525] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.572443] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[12.582219] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.583692] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_cpp.so\n'}
+[12.593441] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[12.595145] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/pythonpath.sh\n'}
+[12.604395] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/pythonpath.dsv\n'}
+[12.614297] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info\n'}
+[12.625782] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.628699] (-) TimerEvent: {}
+[12.633641] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.640665] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.648124] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.654818] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface\n'}
+[12.661363] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.668054] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_c.c\n'}
+[12.674920] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/__init__.py\n'}
+[12.680729] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.687546] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.694252] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.701237] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.708247] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action\n'}
+[12.714400] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/__init__.py\n'}
+[12.720764] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight_s.c\n'}
+[12.727489] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight.py\n'}
+[12.728757] (-) TimerEvent: {}
+[12.734563] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/libstraight_line_interface__rosidl_generator_py.so\n'}
+[12.808041] (straight_line_interface) StdoutLine: {'line': b"Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface'...\n"}
+[12.808228] (straight_line_interface) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/__init__.py'...\n"}
+[12.809136] (straight_line_interface) StdoutLine: {'line': b"Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action'...\n"}
+[12.809201] (straight_line_interface) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/__init__.py'...\n"}
+[12.809260] (straight_line_interface) StdoutLine: {'line': b"Compiling '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight.py'...\n"}
+[12.814500] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.824737] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.828825] (-) TimerEvent: {}
+[12.829642] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.839533] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.843779] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.853300] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.854726] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_py.so\n'}
+[12.863852] (straight_line_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_py.so" to ""\n'}
+[12.869140] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/ament_index/resource_index/rust_packages/straight_line_interface\n'}
+[12.874784] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust\n'}
+[12.880672] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/build.rs\n'}
+[12.887270] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/src\n'}
+[12.892813] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/src/lib.rs\n'}
+[12.899452] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/src/action.rs\n'}
+[12.906519] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/src/action\n'}
+[12.912483] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/src/action/rmw.rs\n'}
+[12.920075] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/rust/Cargo.toml\n'}
+[12.928893] (-) TimerEvent: {}
+[12.932079] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/action/MoveStraight.idl\n'}
+[12.939054] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/action/MoveStraight.action\n'}
+[12.950278] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/ament_index/resource_index/package_run_dependencies/straight_line_interface\n'}
+[12.961649] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/ament_index/resource_index/parent_prefix_path/straight_line_interface\n'}
+[12.969772] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/ament_prefix_path.sh\n'}
+[12.980910] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/ament_prefix_path.dsv\n'}
+[12.988187] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/path.sh\n'}
+[12.998290] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/environment/path.dsv\n'}
+[13.005115] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/local_setup.bash\n'}
+[13.011802] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/local_setup.sh\n'}
+[13.018458] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/local_setup.zsh\n'}
+[13.025069] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/local_setup.dsv\n'}
+[13.028957] (-) TimerEvent: {}
+[13.031726] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/package.dsv\n'}
+[13.042629] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/ament_index/resource_index/packages/straight_line_interface\n'}
+[13.052254] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cExport.cmake\n'}
+[13.059272] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.066572] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.073831] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.081760] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cppExport.cmake\n'}
+[13.088650] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.095567] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.103179] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.110658] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.118079] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cExport.cmake\n'}
+[13.125331] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.129026] (-) TimerEvent: {}
+[13.132780] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.139927] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.147045] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cppExport.cmake\n'}
+[13.157419] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.165156] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_pyExport.cmake\n'}
+[13.173865] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.181831] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[13.189323] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.196808] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.204353] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.211301] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.217687] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.223949] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.229092] (-) TimerEvent: {}
+[13.230302] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[13.236903] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interfaceConfig.cmake\n'}
+[13.243168] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interfaceConfig-version.cmake\n'}
+[13.249906] (straight_line_interface) StdoutLine: {'line': b'-- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/share/straight_line_interface/package.xml\n'}
+[13.262325] (straight_line_interface) CommandEnded: {'returncode': 0}
+[13.329233] (-) TimerEvent: {}
+[13.396842] (straight_line_interface) JobEnded: {'identifier': 'straight_line_interface', 'rc': 0}
+[13.402305] (straight_line) JobStarted: {'identifier': 'straight_line'}
+[13.429323] (-) TimerEvent: {}
+[13.529584] (-) TimerEvent: {}
+[13.629804] (-) TimerEvent: {}
+[13.730019] (-) TimerEvent: {}
+[13.830232] (-) TimerEvent: {}
+[13.930515] (-) TimerEvent: {}
+[14.030860] (-) TimerEvent: {}
+[14.091756] (straight_line) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/straight_line', 'build', '--build-base', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build', 'install', '--record', '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/install.log', '--install-scripts', '$base/lib/straight_line', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/src/straight_line', 'env': {'ARCH': 'x86_64', 'QT_SCALE_FACTOR': '1', 'USER': 'ee106a-aej', 'HOSTNAME': 'ros2', 'XDG_SESSION_TYPE': 'x11', 'MASTERDIR': '/home/ff/ee106a', 'COMPIZ_CONFIG_PROFILE': 'mate', 'XDG_CACHE_HOME': '/home/cc/ee106a/fa26/class/ee106a-aej/.cache', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/lib:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc/ee106a/fa26/class/ee106a-aej', 'OLDPWD': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'EE106_UR_ROBOT_IP': '192.168.1.101', 'MANAGERPID': '107037', 'DISTROBOX_ENTER_PATH': '/usr/local/bin/distrobox-enter', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '107037', 'NNTPSERVER': 'news.csua.berkeley.edu', 'VISUAL': 'emacs', 'XDG_STATE_HOME': '/home/cc/ee106a/fa26/class/ee106a-aej/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192', 'COLORTERM': 'truecolor', 'container': 'podman', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install:/home/ff/ee106a/robot_workspaces/ur/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ee106a-aej', 'MASTER': 'ee106a', 'WINDOWID': '31457286', 'JOURNAL_STREAM': '8:858859', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'ee106a-aej', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '3', 'PATH': '/opt/ros/humble/bin:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/share/b/grading/bin:/home/ff/ee106a/bin:/home/ff/ee106a/bin/arch/x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/share/b/grading/bin:/share/b/grading/sbin:/share/b/runas/x86_64:/share/b/bin:/home/ff/ee106a/venvs/all', 'SESSION_MANAGER': 'local/c105-7:@/tmp/.ICE-unix/107122,unix/c105-7:/tmp/.ICE-unix/107122', 'INVOCATION_ID': 'cb0846482c304853a89b0820de4d3b9d', 'OS': 'Linux', 'XDG_RUNTIME_DIR': '/run/user/90978', 'DISPLAY': ':2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_DATA_HOME': '/home/cc/ee106a/fa26/class/ee106a-aej/.local/share', 'XDG_CONFIG_HOME': '/home/cc/ee106a/fa26/class/ee106a-aej/.config', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/run/user/90978/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/90978/keyring/ssh', 'ROS_DOMAIN_ID': '27', 'AMENT_PREFIX_PATH': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'QT_ACCESSIBILITY': '1', 'EE106_UR_ROBOT_NAME': 'r2d2', 'GDMSESSION': 'mate', 'RUNAS': '/share/b/runas/x86_64', 'GPG_AGENT_INFO': '/run/user/90978/gnupg/S.gpg-agent:0:1', 'CONFIG_SHELL': '/usr/bin/ksh', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line', 'EE106_ENV_SETUP': 'ur_ros2', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/90978/bus,guid=31562aa21c4b85012f3fec056aa82192', 'XDG_DATA_DIRS': '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/cc/ee106a/fa26/class/ee106a-aej/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/usr/local/share:/usr/share', 'PYTHONPATH': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface/local/lib/python3.10/dist-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'MANPATH': '/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:/usr/local/man:/usr/man:/usr/X11/man:/usr/local/man:/share/b/grading/man:', 'VTE_VERSION': '6800', 'EDITOR': 'emacs', 'CMAKE_PREFIX_PATH': '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line_interface:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line_interface', 'QT_FONT_DPI': '122'}, 'shell': False}
+[14.130923] (-) TimerEvent: {}
+[14.231133] (-) TimerEvent: {}
+[14.321002] (straight_line) StdoutLine: {'line': b'running egg_info\n'}
+[14.321548] (straight_line) StdoutLine: {'line': b'creating ../../../build/straight_line/straight_line.egg-info\n'}
+[14.323690] (straight_line) StdoutLine: {'line': b'writing ../../../build/straight_line/straight_line.egg-info/PKG-INFO\n'}
+[14.329609] (straight_line) StdoutLine: {'line': b'writing dependency_links to ../../../build/straight_line/straight_line.egg-info/dependency_links.txt\n'}
+[14.331180] (-) TimerEvent: {}
+[14.332691] (straight_line) StdoutLine: {'line': b'writing entry points to ../../../build/straight_line/straight_line.egg-info/entry_points.txt\n'}
+[14.335078] (straight_line) StdoutLine: {'line': b'writing requirements to ../../../build/straight_line/straight_line.egg-info/requires.txt\n'}
+[14.337385] (straight_line) StdoutLine: {'line': b'writing top-level names to ../../../build/straight_line/straight_line.egg-info/top_level.txt\n'}
+[14.340301] (straight_line) StdoutLine: {'line': b"writing manifest file '../../../build/straight_line/straight_line.egg-info/SOURCES.txt'\n"}
+[14.345933] (straight_line) StdoutLine: {'line': b"reading manifest file '../../../build/straight_line/straight_line.egg-info/SOURCES.txt'\n"}
+[14.347403] (straight_line) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[14.348244] (straight_line) StdoutLine: {'line': b"writing manifest file '../../../build/straight_line/straight_line.egg-info/SOURCES.txt'\n"}
+[14.349358] (straight_line) StdoutLine: {'line': b'running build\n'}
+[14.349986] (straight_line) StdoutLine: {'line': b'running build_py\n'}
+[14.350379] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build\n'}
+[14.351563] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib\n'}
+[14.353404] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib/straight_line\n'}
+[14.355701] (straight_line) StdoutLine: {'line': b'copying straight_line/straight_line_server.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib/straight_line\n'}
+[14.361472] (straight_line) StdoutLine: {'line': b'copying straight_line/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib/straight_line\n'}
+[14.366609] (straight_line) StdoutLine: {'line': b'running install\n'}
+[14.367533] (straight_line) StdoutLine: {'line': b'running install_lib\n'}
+[14.370568] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line\n'}
+[14.372384] (straight_line) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib/straight_line/straight_line_server.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line\n'}
+[14.377323] (straight_line) StdoutLine: {'line': b'copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/build/lib/straight_line/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line\n'}
+[14.382824] (straight_line) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line/straight_line_server.py to straight_line_server.cpython-310.pyc\n'}
+[14.390638] (straight_line) StdoutLine: {'line': b'byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line/__init__.py to __init__.cpython-310.pyc\n'}
+[14.396083] (straight_line) StdoutLine: {'line': b'running install_data\n'}
+[14.396729] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/share/ament_index\n'}
+[14.397846] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/share/ament_index/resource_index\n'}
+[14.399214] (straight_line) StdoutLine: {'line': b'creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/share/ament_index/resource_index/packages\n'}
+[14.401801] (straight_line) StdoutLine: {'line': b'copying resource/straight_line -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/share/ament_index/resource_index/packages\n'}
+[14.406906] (straight_line) StdoutLine: {'line': b'copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/share/straight_line\n'}
+[14.411252] (straight_line) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.415399] (straight_line) StdoutLine: {'line': b'Copying ../../../build/straight_line/straight_line.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/python3.10/site-packages/straight_line-0.0.0-py3.10.egg-info\n'}
+[14.431305] (-) TimerEvent: {}
+[14.453693] (straight_line) StdoutLine: {'line': b'running install_scripts\n'}
+[14.485988] (straight_line) StdoutLine: {'line': b'Installing straight_line_server script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/straight_line/lib/straight_line\n'}
+[14.491716] (straight_line) StdoutLine: {'line': b"writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/straight_line/install.log'\n"}
+[14.513309] (straight_line) CommandEnded: {'returncode': 0}
+[14.531410] (-) TimerEvent: {}
+[14.575622] (straight_line) JobEnded: {'identifier': 'straight_line', 'rc': 0}
+[14.581170] (-) EventReactorShutdown: {}
