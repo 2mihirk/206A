@@ -8,7 +8,7 @@ Adapted for Fall 2020 by: Amay Saxena, 9/10/20
 Adapted for Fall 2026 by: Sebastian Vargas and Valmik Prabhu
 
 This Python file is a code skeleton for HW2. You should fill in
-the body of the eight empty methods below so that they implement the kinematic
+the body of the nine empty methods below so that they implement the kinematic
 functions described in the assignment.
 
 When you think you have the methods implemented correctly, you can test your
@@ -104,7 +104,6 @@ def twist_to_SE2(xi, theta=1.0):
 # ----------------------------- 3D Functions -----------------------------------
 # --------------- (These are the functions you need to complete.) --------------
 
-
 def R3_to_so3(omega):
     """
     Converts a rotation vector in 3D to its corresponding skew-symmetric matrix.
@@ -115,8 +114,11 @@ def R3_to_so3(omega):
     Returns:
     omega_hat - (3,3) ndarray: the corresponding skew symmetric matrix
     """
-
-    # YOUR CODE HERE
+    return np.array([
+        [0.0, -omega[2], omega[1]],
+        [omega[2], 0.0, -omega[0]],
+        [-omega[1], omega[0], 0.0]
+    ])
 
 
 def so3_to_R3(omega_hat):
@@ -130,10 +132,10 @@ def so3_to_R3(omega_hat):
     omega - (3,) ndarray: the rotation vector
 
     """
-    # Check that the input is skew-symmetric.
+    #this chekcs that the input is skew-symmetric.
     assert np.allclose(omega_hat, -omega_hat.T)
 
-    # YOUR CODE HERE
+    return np.array([omega_hat[2, 1], omega_hat[0, 2], omega_hat[1, 0]])
 
 
 def axis_angle_to_SO3(omega, theta):
@@ -141,17 +143,26 @@ def axis_angle_to_SO3(omega, theta):
     Computes a 3D rotation matrix given a rotation axis and angle of rotation.
 
     Args:
-    omega - (3,) ndarray: the axis of rotation
+    omega - (3,) ndarray: the axis of rotation (may be non-unit)
     theta: the angle of rotation
 
     Returns:
     rot - (3,3) ndarray: the resulting rotation matrix
-
-    Note! Axes are always unit vectors (though you may need to unitify the input omega)
-
     """
+    norm_w = np.linalg.norm(omega)
+    if np.isclose(norm_w, 0.0):
+        return np.eye(3)
 
-    # YOUR CODE HERE
+    unit_w = omega / norm_w
+    total_theta = norm_w * theta
+
+    w_hat = R3_to_so3(unit_w)
+    rot = (
+        np.eye(3)
+        + np.sin(total_theta) * w_hat
+        + (1.0 - np.cos(total_theta)) * (w_hat @ w_hat)
+    )
+    return rot
 
 
 def so3_to_SO3(omega_hat, theta=1):
@@ -164,30 +175,29 @@ def so3_to_SO3(omega_hat, theta=1):
 
     Returns:
     rot - (3,3) ndarray: the resulting rotation matrix
-
-    Note! omega_hat may not correspond to a unit vector (ie it might have some angle information embedded into it)
-
     """
-
-    # YOUR CODE HERE
+    omega = so3_to_R3(omega_hat)
+    return axis_angle_to_SO3(omega, theta)
 
 
 def twist_to_se3(xi, theta=1):
-    """
-    Converts a 3D twist to its corresponding 4x4 matrix representation
+    """Maps a 6D twist vector to its 4x4 se(3) matrix representation.
 
     Args:
-    xi - (6,) ndarray: the 3D twist
-    theta - optional joint displacement
+        xi - (6,) ndarray: 3D twist vector [v, w]
+        theta - optional scalar displacement factor
 
     Returns:
-    xi_hat - (4,4) ndarray: the corresponding 4x4 matrix
-
-    Note: xi need not be a unit twist! (ie it may have some displacement information embedded into it)
+        xi_hat - (4,4) ndarray: element of se(3) Lie algebra
     """
+    linear_v = xi[:3]
+    angular_w = xi[3:]
+    w_hat = R3_to_so3(angular_w)
 
-    # YOUR CODE HERE
-
+    mat = np.zeros((4, 4))
+    mat[:3, :3] = w_hat
+    mat[:3, 3] = linear_v
+    return mat * theta
 
 
 def se3_to_twist(xi_hat):
@@ -200,11 +210,12 @@ def se3_to_twist(xi_hat):
     Returns:
     xi - (6,) ndarray: the 3D twist
     """
+    v = xi_hat[:3, 3]
+    w = so3_to_R3(xi_hat[:3, :3])
+    return np.hstack((v, w))
 
-    # YOUR CODE HERE
 
-
-def twist_to_SE3(xi, theta = 1)
+def twist_to_SE3(xi, theta=1):
     """
     Converts a 3D twist and optional angle to a 4x4 rigid body transformation in SE(3)
 
@@ -218,6 +229,30 @@ def twist_to_SE3(xi, theta = 1)
     Note: xi need not be a unit twist! (ie it may have some displacement information embedded into it)
 
     """
+    v = xi[:3]
+    w = xi[3:]
+    w_norm = np.linalg.norm(w)
+
+    g = np.eye(4)
+
+    # Pure translation case, this is when (w = 0), aka prismatic joint
+    if np.isclose(w_norm, 0):
+        g[:3, 3] = v * theta
+        return g
+
+    #general rotation + translation case (w != 0)
+    w_unit = w / w_norm
+    total_theta = w_norm * theta
+    R = axis_angle_to_SO3(w_unit, total_theta)
+
+# translation component of twist exponential is below
+    # p = (I - R)(w x v) / ||w|| + (w w^T v * theta) / ||w||^2
+    w_cross_v = np.cross(w_unit, v)
+    p = (np.eye(3) - R) @ w_cross_v / w_norm + np.outer(w_unit, w_unit) @ v * theta
+
+    g[:3, :3] = R
+    g[:3, 3] = p
+    return g
 
 
 def se3_to_SE3(xi_hat, theta=1):
@@ -234,8 +269,8 @@ def se3_to_SE3(xi_hat, theta=1):
     Note: xi_hat need not correspond to a unit twist! (ie it may have some displacement information embedded into it)
 
     """
-
-    # YOUR CODE HERE
+    xi = se3_to_twist(xi_hat)
+    return twist_to_SE3(xi, theta)
 
 
 def forward_kinematics(xi, theta):
@@ -250,8 +285,13 @@ def forward_kinematics(xi, theta):
     Returns:
     g - (4,4) ndarray: the resulting homogeneous transformation matrix
     """
+    g = np.eye(4)
+    number_joints = xi.shape[1]
 
-    # YOUR CODE HERE
+    for i in range(number_joints):
+        g = g @ twist_to_SE3(xi[:, i], theta[i])
+
+    return g
 
 
 # ------------------------- Other Helper Functions -----------------------------
@@ -439,6 +479,16 @@ if __name__ == "__main__":
                             [-4.,  5.,  0.,  3.],
                             [ 0.,  0.,  0.,  0.]])
     array_func_test(twist_to_se3, func_args, ret_desired)
+
+    # Test twist_to_SE3()
+    arg1 = np.array([2.0, 1, 3, 5, 4, 2])
+    arg2 = 0.658
+    func_args = (arg1, arg2)
+    ret_desired = np.array([[ 0.4249,  0.8601, -0.2824,  1.7814],
+                            [ 0.2901,  0.1661,  0.9425,  0.9643],
+                            [ 0.8575, -0.4824, -0.179 ,  0.1978],
+                            [ 0.    ,  0.    ,  0.    ,  1.    ]])
+    array_func_test(twist_to_SE3, func_args, ret_desired)
 
     # Test se3_to_SE3()
     arg1 = np.array([[ 0., -2.,  4.,  2.],

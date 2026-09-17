@@ -56,7 +56,7 @@ class StraightLineServer(Node):
         req.header.stamp = self.get_clock().now().to_msg()
         req.start_state.is_diff = True
         req.group_name = "ur_manipulator"
-        req.link_name = "wrist_3_link"
+        req.link_name = "tool0"
         req.waypoints = [target_pose]
         req.max_step = step_size
         req.jump_threshold = 0.0

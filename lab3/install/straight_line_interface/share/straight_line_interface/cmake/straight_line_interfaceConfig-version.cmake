@@ -1,14 +1,1 @@
-# generated from ament/cmake/core/templates/nameConfig-version.cmake.in
-set(PACKAGE_VERSION "0.0.0")
-
-set(PACKAGE_VERSION_EXACT False)
-set(PACKAGE_VERSION_COMPATIBLE False)
-
-if("${PACKAGE_FIND_VERSION}" VERSION_EQUAL "${PACKAGE_VERSION}")
-  set(PACKAGE_VERSION_EXACT True)
-  set(PACKAGE_VERSION_COMPATIBLE True)
-endif()
-
-if("${PACKAGE_FIND_VERSION}" VERSION_LESS "${PACKAGE_VERSION}")
-  set(PACKAGE_VERSION_COMPATIBLE True)
-endif()
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/ament_cmake_core/straight_line_interfaceConfig-version.cmake

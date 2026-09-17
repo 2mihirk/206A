@@ -1,0 +1,25 @@
+[1.411s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build --no-deps symlink_data
+[1.649s] running develop
+[1.797s] running egg_info
+[1.799s] creating joint_control.egg-info
+[1.801s] writing joint_control.egg-info/PKG-INFO
+[1.806s] writing dependency_links to joint_control.egg-info/dependency_links.txt
+[1.809s] writing entry points to joint_control.egg-info/entry_points.txt
+[1.813s] writing requirements to joint_control.egg-info/requires.txt
+[1.815s] writing top-level names to joint_control.egg-info/top_level.txt
+[1.818s] writing manifest file 'joint_control.egg-info/SOURCES.txt'
+[1.824s] reading manifest file 'joint_control.egg-info/SOURCES.txt'
+[1.825s] writing manifest file 'joint_control.egg-info/SOURCES.txt'
+[1.828s] running build_ext
+[1.828s] Creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages/joint-control.egg-link (link to .)
+[1.830s] Installing joint_controller script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/joint_control
+[1.835s] Installing validate_trajectory script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/joint_control
+[1.840s] 
+[1.840s] Installed /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control
+[1.841s] running symlink_data
+[1.841s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index
+[1.842s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index
+[1.843s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index/packages
+[1.845s] symbolically linking /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/resource/joint_control -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/ament_index/resource_index/packages
+[1.848s] symbolically linking /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/share/joint_control
+[1.941s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/joint_control/build --no-deps symlink_data

@@ -1,12 +1,1 @@
-#![allow(non_camel_case_types)]
-#![allow(clippy::derive_partial_eq_without_eq)]
-#![allow(clippy::upper_case_acronyms)]
-
-
-
-#[path = "action.rs"]
-mod action_idiomatic;
-pub mod action {
-    pub use super::action_idiomatic::*;
-    pub mod rmw;
-}
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/rosidl_generator_rs/straight_line_interface/rust/src/lib.rs

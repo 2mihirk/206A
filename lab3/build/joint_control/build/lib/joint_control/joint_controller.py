@@ -4,6 +4,7 @@ import sys
 
 import rclpy
 from rclpy.node import Node
+from rclpy.utilities import remove_ros_args
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from builtin_interfaces.msg import Duration
 
@@ -12,13 +13,15 @@ class JointController(Node):
     def __init__(self, joint_angles):
         super().__init__("joint_controller")
 
+        # Corrected standard kinematic order
+        
         self.joint_names = [
             "shoulder_pan_joint",
+            "shoulder_lift_joint",
+            "elbow_joint",
+            "wrist_1_joint",
             "wrist_2_joint",
             "wrist_3_joint",
-            "wrist_1_joint",
-            "elbow_joint",
-            "shoulder_lift_joint",
         ]
 
         self.joint_angles = joint_angles
@@ -28,8 +31,6 @@ class JointController(Node):
             "/joint_trajectory_validated",
             10,
         )
-
-        self.publish_trajectory()
 
     def publish_trajectory(self):
         # Create trajectory and assign joint order
@@ -50,15 +51,26 @@ class JointController(Node):
 
 
 def main(args=None):
-    if len(sys.argv) != 7:
+    # Filter out ROS 2 specific arguments
+    clean_argv = remove_ros_args(sys.argv)
+
+    if len(clean_argv) != 7:
+        print("Usage: ros2 run joint_control joint_controller <q1> <q2> <q3> <q4> <q5> <q6>")
         sys.exit(1)
 
-    joint_angles = [float(angle) for angle in sys.argv[1:]]
+    joint_angles = [float(angle) for angle in clean_argv[1:]]
 
     rclpy.init(args=args)
     node = JointController(joint_angles)
 
-    rclpy.spin_once(node, timeout_sec=2.0)
+    # Allow time for publisher discovery and topic transmission
+    for _ in range(10):
+        rclpy.spin_once(node, timeout_sec=0.1)
+        if node.publisher.get_subscription_count() > 0:
+            break
+
+    node.publish_trajectory()
+    rclpy.spin_once(node, timeout_sec=1.0)
 
     node.destroy_node()
     rclpy.shutdown()

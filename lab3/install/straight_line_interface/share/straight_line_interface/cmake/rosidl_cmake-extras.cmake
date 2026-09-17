@@ -1,4 +1,1 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(straight_line_interface_IDL_FILES "action/MoveStraight.idl")
-set(straight_line_interface_INTERFACE_FILES "action/MoveStraight.action")
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/rosidl_cmake/rosidl_cmake-extras.cmake

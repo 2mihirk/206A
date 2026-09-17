@@ -1,4 +1,1 @@
-source;share/straight_line_interface/environment/ament_prefix_path.sh
-source;share/straight_line_interface/environment/library_path.sh
-source;share/straight_line_interface/environment/path.sh
-source;share/straight_line_interface/environment/pythonpath.sh
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating straight_line.egg-info
+writing straight_line.egg-info/PKG-INFO
+writing dependency_links to straight_line.egg-info/dependency_links.txt
+writing entry points to straight_line.egg-info/entry_points.txt
+writing requirements to straight_line.egg-info/requires.txt
+writing top-level names to straight_line.egg-info/top_level.txt
+writing manifest file 'straight_line.egg-info/SOURCES.txt'
+reading manifest file 'straight_line.egg-info/SOURCES.txt'
+writing manifest file 'straight_line.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight-line.egg-link (link to .)
+Installing straight_line_server script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/lib/straight_line
+
+Installed /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line
+running symlink_data
+creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/share/ament_index
+creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/share/ament_index/resource_index
+creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/share/ament_index/resource_index/packages
+symbolically linking /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line/resource/straight_line -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/share/ament_index/resource_index/packages
+symbolically linking /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line/package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/straight_line/share/straight_line

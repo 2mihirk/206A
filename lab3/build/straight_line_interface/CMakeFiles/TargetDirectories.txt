@@ -9,7 +9,7 @@
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/straight_line_interface__rosidl_typesupport_c.dir
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_cpp.dir
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/straight_line_interface__rosidl_typesupport_cpp.dir
-/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/ament_cmake_python_copy_straight_line_interface.dir
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/ament_cmake_python_symlink_straight_line_interface.dir
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/ament_cmake_python_build_straight_line_interface_egg.dir
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/straight_line_interface__rosidl_generator_py.dir
 /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_c__pyext.dir

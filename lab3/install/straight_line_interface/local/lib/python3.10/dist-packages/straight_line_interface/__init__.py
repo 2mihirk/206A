@@ -1,0 +1,1 @@
+/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/rosidl_generator_py/straight_line_interface/__init__.py

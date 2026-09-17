@@ -1,5 +1,0 @@
-  File "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages/forward_kinematics/kin_func_skeleton.py", line 207
-    def twist_to_SE3(xi, theta = 1)
-                                   ^
-SyntaxError: expected ':'
-
