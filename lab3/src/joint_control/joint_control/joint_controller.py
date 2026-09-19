@@ -13,15 +13,15 @@ class JointController(Node):
     def __init__(self, joint_angles):
         super().__init__("joint_controller")
 
-        # Corrected standard kinematic order
+        #changed the standard kinematic order here
         
         self.joint_names = [
             "shoulder_pan_joint",
-            "shoulder_lift_joint",
-            "elbow_joint",
-            "wrist_1_joint",
             "wrist_2_joint",
             "wrist_3_joint",
+            "wrist_1_joint",
+            "elbow_joint",
+            "shoulder_lift_joint",
         ]
 
         self.joint_angles = joint_angles
@@ -33,7 +33,7 @@ class JointController(Node):
         )
 
     def publish_trajectory(self):
-        # Create trajectory and assign joint order
+        #create trajectory and assign joint order the right way
         traj = JointTrajectory()
         traj.joint_names = self.joint_names
 
@@ -43,7 +43,7 @@ class JointController(Node):
         pt.velocities = [0.0] * 6
         pt.time_from_start = Duration(sec=5)
 
-        # Add point and send to safety validation topic
+        #point adder
         traj.points.append(pt)
         self.publisher.publish(traj)
 
@@ -53,7 +53,7 @@ class JointController(Node):
 def main(args=None):
     # Filter out ROS 2 specific arguments
     clean_argv = remove_ros_args(sys.argv)
-
+# we ensure 6 args bc we were having errors with wrong args
     if len(clean_argv) != 7:
         print("Usage: ros2 run joint_control joint_controller <q1> <q2> <q3> <q4> <q5> <q6>")
         sys.exit(1)

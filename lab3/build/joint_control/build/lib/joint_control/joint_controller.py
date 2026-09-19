@@ -17,11 +17,11 @@ class JointController(Node):
         
         self.joint_names = [
             "shoulder_pan_joint",
-            "shoulder_lift_joint",
-            "elbow_joint",
-            "wrist_1_joint",
             "wrist_2_joint",
             "wrist_3_joint",
+            "wrist_1_joint",
+            "elbow_joint",
+            "shoulder_lift_joint",
         ]
 
         self.joint_angles = joint_angles

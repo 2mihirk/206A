@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 
 import rclpy
+import tf2_ros
 from rclpy.action import ActionClient, ActionServer, CancelResponse, GoalResponse
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
@@ -19,6 +20,10 @@ class StraightLineServer(Node):
 
         # Use ReentrantCallbackGroup so action callbacks and service client calls execute concurrently
         self.cb_group = ReentrantCallbackGroup()
+
+        # TF buffer/listener so we can look up the robot's current tool0 orientation
+        self.tf_buffer = tf2_ros.Buffer()
+        self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
         # Initialize MoveIt Cartesian path service client
         self.path_client = self.create_client(
@@ -96,6 +101,20 @@ class StraightLineServer(Node):
 
         fb = MoveStraight.Feedback()
         res = MoveStraight.Result()
+
+        # Ignore any client-supplied orientation — always keep the tool's
+        # current orientation and only move to the requested position.
+        try:
+            current_tf = self.tf_buffer.lookup_transform(
+                "base_link", "tool0", rclpy.time.Time()
+            )
+            target_pose.orientation = current_tf.transform.rotation
+        except Exception as e:
+            self.get_logger().error(f"Could not look up current tool0 orientation: {e}")
+            res.success = False
+            res.message = "Failed to look up current tool0 orientation."
+            handle.abort()
+            return res
 
         plan_response = await self.request_cartesian_plan(target_pose, resolution)
         ratio = plan_response.fraction
