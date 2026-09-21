@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tf-listener
+Version: 0.0.0
+Summary: ROS 2 TF listener for querying UR7e coordinate transformations in EECS C106A.
+Home-page: UNKNOWN
+Maintainer: ee106a-tab
+Maintainer-email: aarsh.shroff@berkeley.edu
+License: TODO: License declaration
+Platform: UNKNOWN
+Provides-Extra: test
+
+UNKNOWN
+

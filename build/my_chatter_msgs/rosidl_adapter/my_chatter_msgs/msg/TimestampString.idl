@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_chatter_msgs/msg/TimestampString.msg
+// generated code does not contain a copyright notice
+
+
+module my_chatter_msgs {
+  module msg {
+    struct TimestampString {
+      string user_message;
+
+      double timestamp;
+    };
+  };
+};

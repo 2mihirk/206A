@@ -1,0 +1,5 @@
+  File "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/square_drive.py", line 10
+    SIDE =    # meters
+              ^^^^^^^^
+SyntaxError: invalid syntax
+

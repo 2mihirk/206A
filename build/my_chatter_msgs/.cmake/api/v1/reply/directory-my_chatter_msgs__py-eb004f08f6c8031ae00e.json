@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "my_chatter_msgs__py",
+		"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/my_chatter_msgs/my_chatter_msgs__py"
+	}
+}

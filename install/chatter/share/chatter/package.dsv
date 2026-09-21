@@ -1,0 +1,6 @@
+source;share/chatter/hook/pythonpath.ps1
+source;share/chatter/hook/pythonpath.dsv
+source;share/chatter/hook/pythonpath.sh
+source;share/chatter/hook/ament_prefix_path.ps1
+source;share/chatter/hook/ament_prefix_path.dsv
+source;share/chatter/hook/ament_prefix_path.sh

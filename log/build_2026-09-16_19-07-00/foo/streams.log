@@ -1,0 +1,33 @@
+[6.036s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab0/src/foo': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/foo build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/install.log --install-scripts $base/lib/foo --single-version-externally-managed install_data
+[6.463s] running egg_info
+[6.464s] creating ../../../build/foo/foo.egg-info
+[6.467s] writing ../../../build/foo/foo.egg-info/PKG-INFO
+[6.475s] writing dependency_links to ../../../build/foo/foo.egg-info/dependency_links.txt
+[6.479s] writing entry points to ../../../build/foo/foo.egg-info/entry_points.txt
+[6.482s] writing requirements to ../../../build/foo/foo.egg-info/requires.txt
+[6.485s] writing top-level names to ../../../build/foo/foo.egg-info/top_level.txt
+[6.488s] writing manifest file '../../../build/foo/foo.egg-info/SOURCES.txt'
+[6.496s] reading manifest file '../../../build/foo/foo.egg-info/SOURCES.txt'
+[6.497s] writing manifest file '../../../build/foo/foo.egg-info/SOURCES.txt'
+[6.499s] running build
+[6.499s] running build_py
+[6.500s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build
+[6.501s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build/lib
+[6.503s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build/lib/foo
+[6.505s] copying foo/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build/lib/foo
+[6.509s] running install
+[6.509s] running install_lib
+[6.512s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages/foo
+[6.514s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build/lib/foo/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages/foo
+[6.519s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages/foo/__init__.py to __init__.cpython-310.pyc
+[6.528s] running install_data
+[6.529s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/share/ament_index
+[6.531s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/share/ament_index/resource_index
+[6.533s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/share/ament_index/resource_index/packages
+[6.535s] copying resource/foo -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/share/ament_index/resource_index/packages
+[6.540s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/share/foo
+[6.546s] running install_egg_info
+[6.549s] Copying ../../../build/foo/foo.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages/foo-0.0.0-py3.10.egg-info
+[6.648s] running install_scripts
+[6.648s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/install.log'
+[6.698s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab0/src/foo' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/foo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/foo build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/foo/install.log --install-scripts $base/lib/foo --single-version-externally-managed install_data

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: forward-kinematics
+Version: 0.0.0
+Summary: Forward kinematics utilities and ROS 2 node for the UR7e used in EECS C106A.
+Home-page: UNKNOWN
+Maintainer: ee106a-tab
+Maintainer-email: aarsh.shroff@berkeley.edu
+License: TODO: License declaration
+Platform: UNKNOWN
+Provides-Extra: test
+
+UNKNOWN
+

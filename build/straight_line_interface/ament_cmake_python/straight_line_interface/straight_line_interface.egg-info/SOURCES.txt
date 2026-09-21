@@ -4,3 +4,5 @@ straight_line_interface.egg-info/PKG-INFO
 straight_line_interface.egg-info/SOURCES.txt
 straight_line_interface.egg-info/dependency_links.txt
 straight_line_interface.egg-info/top_level.txt
+straight_line_interface/action/__init__.py
+straight_line_interface/action/_move_straight.py

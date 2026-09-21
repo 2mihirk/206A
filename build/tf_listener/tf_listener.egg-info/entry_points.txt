@@ -1,0 +1,3 @@
+[console_scripts]
+tf_listener = tf_listener.tf_listener:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+listener = chatter.subscriber_member_function:main
+talker = chatter.publisher_member_function:main
+

@@ -1,0 +1,8 @@
+setup.py
+my_chatter_msgs/__init__.py
+my_chatter_msgs.egg-info/PKG-INFO
+my_chatter_msgs.egg-info/SOURCES.txt
+my_chatter_msgs.egg-info/dependency_links.txt
+my_chatter_msgs.egg-info/top_level.txt
+my_chatter_msgs/msg/__init__.py
+my_chatter_msgs/msg/_timestamp_string.py

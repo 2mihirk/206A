@@ -1,0 +1,28 @@
+[0.700s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/src/turtlebot_controller': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/ros2_aruco:${AMENT_PREFIX_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot_controller build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/install.log --install-scripts $base/lib/turtlebot_controller --single-version-externally-managed install_data
+[0.904s] running egg_info
+[0.905s] writing ../../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+[0.908s] writing dependency_links to ../../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+[0.911s] writing entry points to ../../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+[0.914s] writing requirements to ../../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+[0.917s] writing top-level names to ../../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+[0.924s] reading manifest file '../../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[0.927s] writing manifest file '../../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[0.929s] running build
+[0.929s] running build_py
+[0.931s] running install
+[0.932s] running install_lib
+[0.937s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/square_drive.py to square_drive.cpython-310.pyc
+[0.938s]   File "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/square_drive.py", line 10
+[0.938s]     SIDE =    # meters
+[0.939s]               ^^^^^^^^
+[0.939s] SyntaxError: invalid syntax
+[0.939s] 
+[0.939s] running install_data
+[0.941s] running install_egg_info
+[0.945s] removing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.955s] Copying ../../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+[0.997s] running install_scripts
+[1.030s] Installing nav_client script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/turtlebot_controller
+[1.034s] Installing square_drive script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/turtlebot_controller
+[1.038s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/install.log'
+[1.074s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/src/turtlebot_controller' returned '0': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/ros2_aruco:${AMENT_PREFIX_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/turtlebot_controller/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot_controller build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/turtlebot_controller/install.log --install-scripts $base/lib/turtlebot_controller --single-version-externally-managed install_data

@@ -1,0 +1,33 @@
+[6.025s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab0/src/bar': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bar build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/install.log --install-scripts $base/lib/bar --single-version-externally-managed install_data
+[6.493s] running egg_info
+[6.494s] creating ../../../build/bar/bar.egg-info
+[6.496s] writing ../../../build/bar/bar.egg-info/PKG-INFO
+[6.502s] writing dependency_links to ../../../build/bar/bar.egg-info/dependency_links.txt
+[6.505s] writing entry points to ../../../build/bar/bar.egg-info/entry_points.txt
+[6.509s] writing requirements to ../../../build/bar/bar.egg-info/requires.txt
+[6.511s] writing top-level names to ../../../build/bar/bar.egg-info/top_level.txt
+[6.514s] writing manifest file '../../../build/bar/bar.egg-info/SOURCES.txt'
+[6.523s] reading manifest file '../../../build/bar/bar.egg-info/SOURCES.txt'
+[6.525s] writing manifest file '../../../build/bar/bar.egg-info/SOURCES.txt'
+[6.526s] running build
+[6.526s] running build_py
+[6.527s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build
+[6.529s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build/lib
+[6.530s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build/lib/bar
+[6.533s] copying bar/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build/lib/bar
+[6.537s] running install
+[6.537s] running install_lib
+[6.540s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages/bar
+[6.543s] copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build/lib/bar/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages/bar
+[6.550s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages/bar/__init__.py to __init__.cpython-310.pyc
+[6.557s] running install_data
+[6.558s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/share/ament_index
+[6.560s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/share/ament_index/resource_index
+[6.561s] creating /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/share/ament_index/resource_index/packages
+[6.564s] copying resource/bar -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/share/ament_index/resource_index/packages
+[6.569s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/share/bar
+[6.574s] running install_egg_info
+[6.576s] Copying ../../../build/bar/bar.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages/bar-0.0.0-py3.10.egg-info
+[6.622s] running install_scripts
+[6.697s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/install.log'
+[6.698s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab0/src/bar' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/install/bar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bar build --build-base /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/build install --record /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/build/bar/install.log --install-scripts $base/lib/bar --single-version-externally-managed install_data

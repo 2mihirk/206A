@@ -1,0 +1,6 @@
+[console_scripts]
+multi_patrol_client = turtle_patrol.multi_patrol_client:main
+multi_patrol_server = turtle_patrol.multi_patrol_server:main
+patrol_client = turtle_patrol.patrol_client:main
+patrol_server = turtle_patrol.patrol_server:main
+

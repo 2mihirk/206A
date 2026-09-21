@@ -1,0 +1,6 @@
+{
+  "package_name": "turtle_patrol_interface",
+  "non_idl_tuples": [
+    "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab2/src/turtle_patrol_interface:srv/Patrol.srv"
+  ]
+}
