@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ros2_aruco_interfaces__rs",
+		"source" : "/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces/ros2_aruco_interfaces__rs"
+	}
+}

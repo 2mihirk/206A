@@ -1,0 +1,4 @@
+[console_scripts]
+nav_client = turtlebot_controller.nav_client:main
+square_drive = turtlebot_controller.square_drive:main
+

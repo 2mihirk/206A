@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying turtlebot_controller/nav_client.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller
+running install
+running install_lib
+copying /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller/nav_client.py -> /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller
+byte-compiling /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/nav_client.py to nav_client.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing nav_client script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/turtlebot_controller
+Installing square_drive script to /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/turtlebot_controller/lib/turtlebot_controller
+writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/turtlebot_controller/install.log'
