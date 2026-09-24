@@ -1,0 +1,155 @@
+[0.344s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces -- -j32 -l32
+[2.992s] [  3%] Built target ros2_aruco_interfaces__cpp
+[2.996s] [  6%] Built target ros2_aruco_interfaces__rs
+[3.028s] [ 15%] Built target ros2_aruco_interfaces__rosidl_generator_c
+[3.218s] [ 15%] Built target ament_cmake_python_copy_ros2_aruco_interfaces
+[3.610s] [ 34%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp
+[3.611s] [ 34%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp
+[3.619s] [ 43%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.665s] [ 68%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c
+[3.665s] [ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c
+[3.666s] [ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_c
+[3.732s] [ 71%] Built target ros2_aruco_interfaces
+[3.771s] [ 75%] Built target ros2_aruco_interfaces__py
+[3.861s] [ 81%] Built target ros2_aruco_interfaces__rosidl_generator_py
+[4.110s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext
+[4.110s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.111s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.305s] running egg_info
+[4.308s] writing ros2_aruco_interfaces.egg-info/PKG-INFO
+[4.313s] writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt
+[4.317s] writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt
+[4.324s] reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[4.327s] writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[4.360s] [100%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg
+[4.430s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces -- -j32 -l32
+[4.444s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces
+[4.460s] -- Install configuration: ""
+[4.462s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces
+[4.464s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.466s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.468s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.h
+[4.469s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.471s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c
+[4.472s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h
+[4.473s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h
+[4.474s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h
+[4.476s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.478s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh
+[4.479s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv
+[4.483s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so
+[4.487s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.489s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.492s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.493s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.495s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h
+[4.498s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.502s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.504s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.505s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.506s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.hpp
+[4.508s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.509s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp
+[4.510s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp
+[4.511s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.hpp
+[4.513s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp
+[4.513s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.515s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.517s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.518s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.520s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[4.521s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/dds_fastrtps
+[4.526s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.530s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.532s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.534s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.536s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h
+[4.537s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c
+[4.538s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.541s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
+[4.546s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
+[4.549s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[4.551s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[4.553s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[4.555s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp
+[4.556s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp
+[4.560s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.566s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
+[4.570s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh
+[4.571s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv
+[4.574s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info
+[4.576s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/top_level.txt
+[4.639s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt
+[4.645s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/PKG-INFO
+[4.652s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt
+[4.660s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces
+[4.662s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg
+[4.663s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py
+[4.665s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py
+[4.666s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers_s.c
+[4.667s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.669s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py
+[4.670s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.671s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.672s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.673s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c
+[4.675s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.676s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so
+[4.771s] Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces'...
+[4.771s] Listing '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg'...
+[4.776s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.782s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.787s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.793s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so
+[4.800s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ament_index/resource_index/rust_packages/ros2_aruco_interfaces
+[4.801s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust
+[4.803s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src
+[4.806s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg.rs
+[4.807s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/lib.rs
+[4.808s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg
+[4.811s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/src/msg/rmw.rs
+[4.812s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/build.rs
+[4.813s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/rust/Cargo.toml
+[4.815s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl
+[4.817s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg
+[4.820s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces
+[4.821s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces
+[4.823s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh
+[4.825s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv
+[4.826s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh
+[4.828s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv
+[4.838s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash
+[4.838s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh
+[4.838s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh
+[4.839s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv
+[4.839s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv
+[4.845s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces
+[4.852s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport.cmake
+[4.854s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.859s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.870s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.871s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cppExport.cmake
+[4.871s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.873s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.878s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.881s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.886s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake
+[4.888s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.897s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.898s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.900s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake
+[4.903s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.908s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport.cmake
+[4.910s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.912s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.914s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.915s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.917s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.919s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.920s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.922s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.924s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[4.925s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake
+[4.927s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake
+[4.928s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml
+[5.225s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/build/ros2_aruco_interfaces
