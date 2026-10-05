@@ -1,1 +1,0 @@
-/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/rosidl_typesupport_fastrtps_cpp/straight_line_interface/action/detail/move_straight__rosidl_typesupport_fastrtps_cpp.hpp

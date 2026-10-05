@@ -1,3 +1,0 @@
-[console_scripts]
-my_listener = my_chatter.my_listener:main
-my_talker = my_chatter.my_talker:main

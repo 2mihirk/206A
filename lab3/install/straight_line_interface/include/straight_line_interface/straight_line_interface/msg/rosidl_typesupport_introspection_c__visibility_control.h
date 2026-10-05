@@ -1,1 +1,0 @@
-/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/build/straight_line_interface/rosidl_typesupport_introspection_c/straight_line_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h

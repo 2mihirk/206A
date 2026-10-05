@@ -1,0 +1,20 @@
+# ROS 2 / colcon
+**/build/
+**/install/
+**/log/
+.colcon/
+# Python
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+# IDEs / editors
+.vscode/
+.idea/
+# OS files
+.DS_Store
+Thumbs.db
+# Python virtual environments
+.venv/
+venv/
+env/
