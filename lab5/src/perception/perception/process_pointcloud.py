@@ -66,14 +66,14 @@ class RealSensePCSubscriber(Node):
         # Filter points between z coords between min_z and max_z and max_y
         # Call the numpy array filtered_points
 
-        source_frame = _______ # TODO: Fill in the source frame based on what you implemented in your static TF broadcaster 
+        source_frame = msg.header.frame_id# TODO: Fill in the source frame based on what you implemented in your static TF broadcaster 
         try:
-            tf = self.tf_buffer.lookup_transform(_______, _______, Time()) # TODO: the entire tf lookup params should be filled in
+            tf = self.tf_buffer.lookup_transform(self.target_frame, source_frame, Time()) # TODO: the entire tf lookup params should be filled in
         except TransformException as ex:
             self.get_logger().warn(f'Could not transform {source_frame} to {self.target_frame}: {ex}')
             return
 
-        transformed_cloud = do_transform_cloud(_______, _______) # TODO: look what do_transform_cloud takes in and outputs
+        transformed_cloud = do_transform_cloud(msg, tf) # TODO: look what do_transform_cloud takes in and outputs
 
         raw_points = pc2.read_points(
             transformed_cloud,
@@ -95,8 +95,15 @@ class RealSensePCSubscriber(Node):
             self.find_tape(points_base, hsv, transformed_cloud.header)
 
         # TODO: Create masks based on the specified min, max y and z parameters above in order to filter points
+        x = points_base[:, 0]
+        y = points_base[:, 1]
+        z = points_base[:, 2]
+        mask = (z>=self.min_z) & (y<=self.max_y)
+
         # TODO (Part 5): the cube is black, so once you have hsv, also only keep points with V <= self.cube_max_v
-        filtered_points = _______
+        if hsv is not None: 
+            mask &= hsv[:, 2] <= self.cube_max_v
+        filtered_points = points_base[mask]
 
         if filtered_points.size == 0:
             self.get_logger().warn(
@@ -111,15 +118,24 @@ class RealSensePCSubscriber(Node):
         self.filtered_points_pub.publish(filtered_cloud)
 
         # TODO: Compute cube position in base_link frame using filtered_points.
-        cube_x = _______
-        cube_y = _______
+        cube_x = float(np.median(filtered_points[:, 0]))
+        cube_y = float(np.median(filtered_points[:, 1]))
+
 
         # TODO: Estimate how tall the cube is. For the top of the cube, use one of the
         # highest filtered points (a high percentile is less noisy than the max). For the
         # table, use the points (from points_base) that are between TABLE_RING_MIN and
         # TABLE_RING_MAX away from the cube's center in x and y.
-        cube_top = _______
-        table_z = _______
+        cube_top = float(np.percentile(filtered_points[:, 2], 95))
+        dx = points_base[:, 0] - cube_x
+        dy = points_base[:, 1] - cube_y
+        dist = np.hypot(dx, dy)                      # horizontal distance from cube center
+        ring = (dist >= TABLE_RING_MIN) & (dist <= TABLE_RING_MAX)
+
+        if not np.any(ring):
+            self.get_logger().warn('No table points around the cube', throttle_duration_sec=2.0)
+            return
+        table_z = float(np.median(points_base[ring, 2]))
 
         cube_height = cube_top - table_z
         cube_z = table_z + cube_height / 2  # middle of the cube
@@ -130,8 +146,12 @@ class RealSensePCSubscriber(Node):
         self.cube_height_pub.publish(Float32(data=cube_height))
 
         # TODO: Publish the cube pose message with the cube position information
-        cube_pose = _______
-
+        cube_pose = PointStamped()
+        cube_pose.header.stamp = transformed_cloud.header.stamp
+        cube_pose.header.frame_id = self.target_frame      # 'base_link'
+        cube_pose.point.x = float(cube_x)
+        cube_pose.point.y = float(cube_y)
+        cube_pose.point.z = float(cube_z)
         self.cube_pose_pub.publish(cube_pose)
 
     def point_colors_hsv(self, msg):
@@ -179,6 +199,9 @@ class RealSensePCSubscriber(Node):
             elif param.name in ('cube_max_v', 'tape_h_min', 'tape_h_max', 'tape_s_min',
                                 'tape_v_min', 'tape_min_points'):
                 setattr(self, param.name, int(param.value))
+            elif param.name == 'max_y' and param.type_ == Parameter.Type.DOUBLE:
+                self.max_y = float(param.value)
+
 
         if new_min_z > new_max_z:
             return SetParametersResult(
