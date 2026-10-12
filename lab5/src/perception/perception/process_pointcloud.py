@@ -21,7 +21,7 @@ class RealSensePCSubscriber(Node):
     def __init__(self):
         super().__init__('realsense_pc_subscriber')
         self.target_frame = self.declare_parameter('target_frame', 'base_link').value
-        self.max_y = float(self.declare_parameter('max_y', 0.79).value)
+        self.max_y = float(self.declare_parameter('max_y', 0.67).value)
 
         self.min_z = float(self.declare_parameter('min_z', -0.18).value)
         self.max_z = float(self.declare_parameter('max_z', -0.15).value)
@@ -168,14 +168,20 @@ class RealSensePCSubscriber(Node):
         # TODO (Part 5): convert rgb to HSV with cv2.cvtColor. cvtColor works on images,
         # so reshape to (N, 1, 3) first and back to (N, 3) after. Careful, these colors
         # are in RGB order, not the BGR order OpenCV usually uses.
-        hsv = None  # replace this
+        hsv = cv2.cvtColor(rgb.reshape(-1, 1, 3), cv2.COLOR_RGB2HSV).reshape(-1, 3)
         return hsv
 
     def find_tape(self, points_base, hsv, header):
         # TODO (Part 5): keep the points whose color is in the tape's HSV range
         # (tape_h_min <= H <= tape_h_max, S >= tape_s_min, V >= tape_v_min).
         # The tape is on the table, so also drop anything above max_z or past max_y.
-        tape_points = _______
+        h, s, v = hsv[:, 0], hsv[:, 1], hsv[:, 2]
+        is_blue = ((h >= self.tape_h_min) & (h <= self.tape_h_max) &
+                   (s >= self.tape_s_min) & (v >= self.tape_v_min))
+        near_table = (points_base[:, 2] <= self.max_z) & (points_base[:, 1] <= self.max_y)
+        tape_points = points_base[is_blue & near_table]
+
+
 
         if len(tape_points) < self.tape_min_points:
             return
@@ -184,7 +190,14 @@ class RealSensePCSubscriber(Node):
 
         # TODO (Part 5): publish the centroid of the tape points on /tape_pose
         # (a PointStamped in base_link, don't forget the header)
-        tape_pose = _______
+        center = tape_points.mean(axis=0)
+        tape_pose = PointStamped()
+        tape_pose.header = header                 
+        tape_pose.point.x = float(center[0])
+        tape_pose.point.y = float(center[1])
+        tape_pose.point.z = float(center[2])
+
+
         self.tape_pose_pub.publish(tape_pose)
 
     def _on_parameter_update(self, params):

@@ -143,6 +143,12 @@ class UR7e_CubeGrasp(Node):
        action_tape = 'find_tape'
        self.job_queue.append(action_tape)
 
+       if hover_joint_config is None or grab_joint_config is None:
+        self.get_logger().error('IK failed for the grasp poses, not moving')
+        self.job_queue.clear()
+        self.cube_pose = None   # allow a retry on the next /cube_pose
+        return
+
        self.execute_jobs()
 
 
@@ -169,16 +175,34 @@ class UR7e_CubeGrasp(Node):
         # cube doesn't get pushed into the table.
         # -----------------------------------------------------------
 
-        # 1) Move above the tape (so the bottom of the cube clears the table)
-        ...
+        tape_z = tape_pose.point.z          # table height at the tape
+        h = self.cube_height
 
-        # 2) Lower the cube down onto the tape
+        # 1) Move above the tape: cube bottom clears the table by a cube height + clearance
+        clear_z_gripper = tape_z + self.grasp_height + h + PRE_GRASP_CLEARANCE
+        clear_z_wrist = clear_z_gripper + GRIPPER_LENGTH
+        above_cfg = self.ik_planner.compute_ik(self.joint_state, x, y, clear_z_wrist)
 
-        # 3) Open the gripper
+        # 2) Lower so the cube's bottom sits TABLE_CLEARANCE above the tape
+        release_z_gripper = tape_z + self.grasp_height + TABLE_CLEARANCE
+        release_z_wrist = release_z_gripper + GRIPPER_LENGTH
+        release_cfg = self.ik_planner.compute_ik(self.joint_state, x, y, release_z_wrist)
+
+        if above_cfg is None or release_cfg is None:
+            self.get_logger().error('IK failed for the place poses, not moving')
+            return
+
+        self.job_queue.append(above_cfg)
+        self.job_queue.append(release_cfg)
+
+        # 3) Open the gripper (it's closed, so toggling opens it)
+        self.job_queue.append('toggle_grip')
 
         # 4) Move back up
+        self.job_queue.append(above_cfg)
 
         # 5) Go back to the start pose
+        self.job_queue.append(self.start_joints)
 
         self.execute_jobs()
 
