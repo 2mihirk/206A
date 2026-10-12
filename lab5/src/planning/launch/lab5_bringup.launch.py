@@ -64,7 +64,12 @@ def generate_launch_description():
         }.items(),
     )
 
-    ik_planner_node = _______
+    ik_planner_node = Node(
+        package='planning',
+        executable = 'ik',
+        name = 'ik_plan_node',
+        output='screen'
+    )
 
     # -------------------------
     # Global shutdown on any process exit
@@ -85,6 +90,7 @@ def generate_launch_description():
         perception_node,
         planning_tf_node,
         moveit_launch,
+        ik_planner_node,
 
         # Global handler (keep at end)
         shutdown_on_any_exit,
