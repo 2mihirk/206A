@@ -28,7 +28,7 @@ class Features:
 
 def detect_sift(image, K, dist, n_features=4000):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
+    gray[:280, :] = 0 # Black out rows 0 to 279 before SIFT
     sift = cv2.SIFT_create(nfeatures=n_features)
     keypoints, descriptors = sift.detectAndCompute(gray, None)
 
