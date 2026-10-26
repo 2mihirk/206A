@@ -152,20 +152,21 @@ class ImageSubscriber(Node):
         cones.header.frame_id = 'base_link'
 
         for mask in masks:
-            # TODO: Count the non-zero pixels in the mask to get A_pixels.
-            pixel_count = 0.
+            #Area of the cone in pixels
+            pixel_count = np.count_nonzero(mask)
 
-            # TODO: Recover depth with Equation 10. self.object_area is A_real.
-            depth = 0.
+            #Depth from area: Z = sqrt(fx * fy * A_real / A_pixels)
+            depth = np.sqrt(self.fx * self.fy * self.object_area / pixel_count)
 
-            # TODO: Mask centroid in image coordinates. np.nonzero returns
-            #       (rows, cols): rows index v, columns index u.
-            u, v = 0., 0.
+            #Centroid of the mask (rows = v, cols = u)
+            vs, us = np.nonzero(mask)
+            u = np.mean(us)
+            v = np.mean(vs)
 
-            # TODO: Back-project to the camera frame (Equations 1 & 2).
-            X = 0.
-            Y = 0.
-            Z = 0.
+            #Back-project to the camera frame
+            Z = depth
+            X = Z * (u - self.cx) / self.fx
+            Y = Z * (v - self.cy) / self.fy
 
             # Convert to turtlebot frame
             # There's no camera frame for the turtlebots, so we just do this instead
@@ -190,9 +191,12 @@ class ImageSubscriber(Node):
         self.cones_pub.publish(cones)
 
     def camera_info_callback(self, msg):
-        # TODO: Store fx, fy, cx, cy from the K matrix as self.fx, self.fy,
-        #       self.cx, self.cy. K is a flat row-major 9-element array.
+        self.fx = msg.k[0]
+        self.fy = msg.k[4]
+        self.cx = msg.k[2]
+        self.cy = msg.k[5]
         self.get_logger().info('Received Camera Info')
+
 
     def _log_detections(self, result):
         found = sorted({self.model.names[int(c)] for c in result.boxes.cls})
