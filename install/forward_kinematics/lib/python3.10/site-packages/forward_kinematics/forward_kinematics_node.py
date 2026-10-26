@@ -10,6 +10,7 @@ from rclpy.node import Node
 from scipy.linalg import expm
 from sensor_msgs.msg import JointState
 
+# Joint order matters here: the twists and the angles both follow this list.
 JOINT_NAMES = [
     "shoulder_pan_joint",
     "shoulder_lift_joint",
@@ -24,6 +25,7 @@ class ForwardKinematicsNode(Node):
     def __init__(self):
         super().__init__("forward_kinematics_node")
 
+        # Do the URDF parsing once up front so the callback stays quick
         self.twists, self.gst0 = self.load_kinematics_description()
 
         self.subscription = self.create_subscription(
@@ -36,22 +38,16 @@ class ForwardKinematicsNode(Node):
         self.get_logger().info("Forward kinematics node started.")
 
     def load_kinematics_description(self):
-        """
-        Load q_i, omega_i, and g_st(0) from the provided flattened
-        UR7e kinematics description.
-
-        Returns:
-            twists: (6, 6) ndarray with one twist per column
-            gst0: (4, 4) ndarray
-        """
+        """Read the UR7e URDF and return (twists, gst0): a 6x6 array of twists
+        (one per column) and the 4x4 zero-configuration transform."""
 
         package_share = get_package_share_directory("forward_kinematics")
         path = os.path.join(package_share, "urdf", "ur7e_flattened.urdf")
 
         root = ET.parse(path).getroot()
-
         joints = {j.attrib["name"]: j for j in root.findall("joint")}
 
+        #pulls a point on each joint axis (q) and the axis direction (omega).
         joint_data = []
         for name in JOINT_NAMES:
             joint = joints[name]
@@ -61,74 +57,61 @@ class ForwardKinematicsNode(Node):
 
         zero_config = root.find("zero_configuration")
 
-        # R: (3, 3) ndarray
-        R = np.array(
+        rotation = np.array(
             [
                 np.fromstring(row.attrib["values"], sep=" ")
                 for row in zero_config.find("rotation").findall("row")
             ]
         )
-
-        # p: (3, 1) ndarray
-        p = np.fromstring(
+        translation = np.fromstring(
             zero_config.find("translation").attrib["xyz"],
             sep=" ",
         )
 
-        twists_list = []
+        # For a revolute joint, it is based on the formula xi = [v; omega] with v = -omega x q.
+        twist_columns = []
         for q, omega in joint_data:
-            # Linear velocity component: v = -omega x q
             v = -np.cross(omega, q)
-            xi = np.concatenate([v, omega])
-            twists_list.append(xi)
+            twist_columns.append(np.concatenate([v, omega]))
 
-        # Stack into a (6, 6) array where each column is a twist [v_i; omega_i]
-        twists = np.column_stack(twists_list)
+        twists = np.column_stack(twist_columns)
 
-        # Initial zero-configuration transformation matrix g_st(0)
+        # Where the end effector sits when every joint is at zero.
         gst0 = np.eye(4)
-        gst0[:3, :3] = R
-        gst0[:3, 3] = p
+        gst0[:3, :3] = rotation
+        gst0[:3, 3] = translation
 
         return twists, gst0
 
     def joint_state_callback(self, msg):
-        """
-        Compute g_st(theta) whenever a new JointState message arrives.
-        """
-        # Map incoming joint names to their positions
-        joint_map = dict(zip(msg.name, msg.position))
+        positions_by_name = dict(zip(msg.name, msg.position))
 
-        # Ensure all required joints exist in the message
-        if not all(name in joint_map for name in JOINT_NAMES):
+        #make sure formatting is right
+        if not all(name in positions_by_name for name in JOINT_NAMES):
             return
 
-        thetas = [joint_map[name] for name in JOINT_NAMES]
+        angles = [positions_by_name[name] for name in JOINT_NAMES]
 
-        # Compute Product of Exponentials: g_st(theta) = e^(xi_1*theta_1) ... e^(xi_6*theta_6) * g_st(0)
+        # Product of exponentials: chain e^(xi_i * theta_i) for each joint,
+        # then finish with g_st(0).
         gst = np.eye(4)
-        for i, theta in enumerate(thetas):
+        for i, theta in enumerate(angles):
             xi = self.twists[:, i]
             v = xi[:3]
             omega = xi[3:]
 
-            # Skew-symmetric matrix for omega
             omega_hat = np.array([
                 [0.0, -omega[2], omega[1]],
                 [omega[2], 0.0, -omega[0]],
                 [-omega[1], omega[0], 0.0]
             ])
 
-            # 4x4 matrix representation of the 6D twist xi
             xi_hat = np.zeros((4, 4))
             xi_hat[:3, :3] = omega_hat
             xi_hat[:3, 3] = v
 
-            # Matrix exponential e^(xi_hat * theta)
-            exp_xi_theta = expm(xi_hat * theta)
-            gst = gst @ exp_xi_theta
+            gst = gst @ expm(xi_hat * theta)
 
-        # Multiply by zero configuration g_st(0)
         gst = gst @ self.gst0
 
         self.get_logger().info(

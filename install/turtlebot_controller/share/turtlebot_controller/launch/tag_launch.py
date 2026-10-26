@@ -1,18 +1,25 @@
 import os
-
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
+    aruco_params = os.path.join(
+        get_package_share_directory('ros2_aruco'), 'config', 'aruco_parameters.yaml')
 
-    aruco_pkg = get_package_share_directory('ros2_aruco')
 
-    # base_link -> camera. The TurtleBot description has no camera link, so without
-    # this every ar_marker_N frame is an orphan with no relationship to the map..
+    robot = LaunchConfiguration('robot')
+    robot_arg = DeclareLaunchArgument(
+        'robot',
+        default_value='apple',
+        description='Your TurtleBot name, e.g. apple. The camera publishes under it.'
+    )
+
+
+    # Static transform: base_link -> camera
     camera_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -25,13 +32,29 @@ def generate_launch_description():
         ],
     )
 
-    aruco = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(aruco_pkg, 'launch', 'aruco_recognition.launch.py')
-        ),
+
+    # ArUco detection node connected to namespaced camera topics
+    aruco = Node(
+        package='ros2_aruco',
+        executable='aruco_node',
+        name='aruco_node',
+        output='screen',
+        parameters=[
+            aruco_params,
+            {
+                'image_topic': ['/', robot, '/image_raw'],
+                'camera_info_topic': ['/', robot, '/camera_info'],
+            },
+        ],
+        remappings=[
+            ('/image_raw', ['/', robot, '/image_raw']),
+            ('/camera_info', ['/', robot, '/camera_info']),
+        ]
     )
 
+
     return LaunchDescription([
+        robot_arg,
         camera_tf,
         aruco,
     ])

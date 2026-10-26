@@ -35,11 +35,11 @@ COLCON_CURRENT_PREFIX="/opt/ros/humble"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/ff/ee106a/robot_workspaces/ur/install"
+COLCON_CURRENT_PREFIX="/opt/ros/turtlebot3_ws/install"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab3/install"
+COLCON_CURRENT_PREFIX="/home/cc/ee106a/fa26/class/ee106a-aej/ros_workspaces/lab4/install"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 
