@@ -23,6 +23,7 @@ OUT_DIR = os.path.dirname(CALIBRATION_PATH)
 SUBPIX_WINDOW = (11, 11)
 SUBPIX_CRITERIA = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 1e-3)
 
+<<<<<<< HEAD
 def board_points(cols, rows, square):
     pts = np.zeros((cols * rows, 3), np.float32)
     # mgrid gives shape (2, cols, rows); .T -> (rows, cols, 2), so x (col) changes fastest = row by row
@@ -44,6 +45,38 @@ def calibrate(object_points, image_points, image_size):
     img_pts = [p.reshape(-1, 1, 2).astype(np.float32) for p in image_points]
     rms, K, dist, rvecs, tvecs = cv2.calibrateCamera(object_points, img_pts, image_size, None, None)
     return rms, K, dist.ravel(), rvecs, tvecs
+=======
+
+def board_points(cols, rows, square):
+    # (cols*rows, 3) float32 corner positions on the z = 0 plane, row by row:
+    # (0,0,0), (square,0,0), ..., then (0,square,0), ...
+    # TODO 1.1: build the grid. np.mgrid[0:cols, 0:rows] gives you every
+    # (col, row) pair, you just need to get it into the right order.
+    raise NotImplementedError('TODO 1.1')
+
+
+def find_corners(gray, cols, rows):
+    # returns the corners as a (cols*rows, 2) array, or None if the board isn't found
+
+    # these help when the lighting is uneven
+    flags = cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_NORMALIZE_IMAGE
+
+    # TODO 1.2: cv2.findChessboardCorners with patternSize (cols, rows) and
+    # flags=flags. if it finds the board, refine with cv2.cornerSubPix using
+    # SUBPIX_WINDOW, a zero zone of (-1, -1), and SUBPIX_CRITERIA.
+    # the OpenCV calibration tutorial has an example of both.
+    raise NotImplementedError('TODO 1.2')
+
+
+def calibrate(object_points, image_points, image_size):
+    # object_points: one board_points() array per picture
+    # image_points: the corners you found in each picture
+    # image_size: (width, height)
+    # should return rms, K, dist (flattened), rvecs, tvecs
+    # TODO 1.3: cv2.calibrateCamera. pass None for the starting K and dist.
+    # careful, it wants the image points shaped (N, 1, 2)
+    raise NotImplementedError('TODO 1.3')
+>>>>>>> e3043386f56bbaa6d1d450f2efe889193064357c
 
 
 # Everything below here just draws pictures of the result.

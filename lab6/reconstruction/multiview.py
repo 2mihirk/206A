@@ -26,19 +26,32 @@ MAX_REPROJ_PX = 4.0
 
 def world_to_camera(T_map_cam):
     # returns R, t such that X_cam = R X_map + t
+<<<<<<< HEAD
     R_mc = T_map_cam[:3, :3]
     t_mc = T_map_cam[:3, 3]
     R = R_mc.T
     t = -R @ t_mc
     return R, t
+=======
+    # TODO 6.1: T_map_cam goes from camera to map, so you need the inverse.
+    # if its rotation is R_mc and the camera center is c, then R = R_mc^T and t = -R c
+    raise NotImplementedError('TODO 6.1')
+>>>>>>> e3043386f56bbaa6d1d450f2efe889193064357c
 
 
 def reprojection_errors(K, R, t, X, uv):
     # pixel distance between X (N, 3) projected into the camera and the observed uv (N, 2)
+<<<<<<< HEAD
     rvec, _ = cv2.Rodrigues(R)
     dist = np.zeros(5)
     proj, _ = cv2.projectPoints(X, rvec, t, K, dist)
     return np.linalg.norm(proj.reshape(-1, 2) - uv, axis=1)
+=======
+    # TODO 6.2: turn R into a rotation vector with cv2.Rodrigues, then project
+    # with cv2.projectPoints. use np.zeros(5) for the distortion since uv is
+    # already undistorted
+    raise NotImplementedError('TODO 6.2')
+>>>>>>> e3043386f56bbaa6d1d450f2efe889193064357c
 
 
 def triangulate_multiview(Ps, uv):

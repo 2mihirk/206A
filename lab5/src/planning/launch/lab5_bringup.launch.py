@@ -64,6 +64,7 @@ def generate_launch_description():
         }.items(),
     )
 
+<<<<<<< HEAD
     ik_planner_node = Node(
         package='planning',
         executable = 'ik',
@@ -71,6 +72,21 @@ def generate_launch_description():
         output='screen'
     )
 
+=======
+    # Add workstation and tool collision geometry to the MoveIt planning scene.
+    planning_scene_obstacles_node = Node(
+        package='planning',
+        executable='planning_scene_obstacles',
+        name='planning_scene_obstacles',
+        output='screen',
+        parameters=[{'obstacles_config': os.path.join(
+            get_package_share_directory('planning'), 'config', 'obstacles.yaml',
+        )}],
+    )
+
+    ik_planner_node = _______
+
+>>>>>>> e3043386f56bbaa6d1d450f2efe889193064357c
     # -------------------------
     # Global shutdown on any process exit
     # -------------------------
@@ -90,7 +106,11 @@ def generate_launch_description():
         perception_node,
         planning_tf_node,
         moveit_launch,
+<<<<<<< HEAD
         ik_planner_node,
+=======
+        planning_scene_obstacles_node,
+>>>>>>> e3043386f56bbaa6d1d450f2efe889193064357c
 
         # Global handler (keep at end)
         shutdown_on_any_exit,
