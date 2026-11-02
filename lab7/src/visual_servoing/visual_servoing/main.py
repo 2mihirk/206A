@@ -64,9 +64,9 @@ class VisualServo(Node):
 
         #TODO tune these as needed
 
-        self.Kp = 0
-        self.Kd = 0 * self.nominal_dt
-        self.Ki = 0 / self.nominal_dt
+        self.Kp = 0.2  # tune
+        self.Kd = 0.2 * self.nominal_dt
+        self.Ki = 0.8 / self.nominal_dt
 
         self.alpha = 0.8
 
@@ -141,8 +141,9 @@ class VisualServo(Node):
 
     def find_error(self, gd, g):
         """Converts the configuration error from SE(3) to a 6x1 twist and returns it"""
-        #TODO: Hint: look at the forward kinematics helper functions
-        return ...
+        # xi_e = log(g_d g^{-1})^vee
+        g_err = jfs.spatial_configuration_error(g, gd)   # = gd @ inv(g)
+        return jfs.spatial_error_twist(g_err)            # 6-vector [v; w]
     
     def send_velocity(self, joint_velocities):
         """Caps the joint speeds at 1 rad/s and publishes the joint speeds to /forward_velocity_controller/commands """
@@ -193,8 +194,7 @@ class VisualServo(Node):
     def get_spatial_jacobian(self):
         """Calculates the spatial jacobian based on the current joint state"""
         current_position, _ = self.get_joint_state()
-        #TODO hint: look at the jacobian helper functions
-        return ...
+        return jfs.spatial_jacobian(self.twists, current_position)   # 6x6
     
     #Circle Stuff
 
@@ -224,15 +224,13 @@ class VisualServo(Node):
         return pose
 
     def make_line(self):
-        # LinearTrajectory starts at point p0. Place the target at the center_pose position
-        #TODO
-
+        p0 = self.find_g('wrist_3_link')[:3, 3]    
+        target = self.find_g('center_pose')[:3, 3]     
         return LinearTrajectory(p0, target, self.args.total_time)
 
     def make_circle(self):
-        # CircularTrajectory starts at center + [r, 0, 0], where the center is the center_pose
-        #TODO
-
+        center = self.find_g('center_pose')[:3, 3]     # same goal point as the line
+        r = self.args.circle_radius                    # from --circle_radius
         return CircularTrajectory(center, r, self.args.total_time)
 
     def control_step(self, goal_pose, Vff, eta, nu, dt):
@@ -328,8 +326,17 @@ class VisualServo(Node):
 
         current_pose = self.find_g('wrist_3_link')
 
-        #TODO: Implement the workspace controller
+        # (18) pose error as a twist
+        eta = self.find_error(goal_pose, current_pose)
 
+        # (20) control law: feedforward + P + D + I
+        Vs = (Vff
+              + self.Kp * eta
+              + self.Kd * (eta - eta_prev) / dt
+              + self.Ki * nu)
+
+        # (21) integrator update with anti-windup discount alpha
+        nu = self.alpha * nu + eta * dt
 
         return Vs, eta, nu
 
@@ -337,33 +344,40 @@ class VisualServo(Node):
 
     def run_visual_servoing(self):
         """Main run loop for visual servoing"""
-        
+
+
         eta = np.zeros(6)
         nu = np.zeros(6)
         time = 0
         switch_controllers(self.controller_type)
 
+
         while rclpy.ok():
 
+
             if self.lookup_ar_tag(self.ar_marker):
-                #TODO: Use the workspace controller you already made for visual servoing
-            
-                goal_pose = ...
-                Vff = ...
+                # Use the workspace controller you already made for visual servoing
 
-                time_prev = ...
-                time = ...
-                dt = ...
 
-                Vs, eta, nu = ...
+                goal_pose = self.find_g('goal_pose')    # G2: pose above the small tag
+                Vff = np.zeros(6)                       # tag motion unknown -> no feedforward
+
+
+                time_prev = time
+                time = self.get_clock().now().nanoseconds * 1e-9
+                dt = np.clip(time - time_prev, 1e-3, self.nominal_dt)
+
+
+                Vs, eta, nu = self.workspace_controller(goal_pose, Vff, eta, nu, dt)
+
 
                 if self.current_joint_state is not None:
-                    joint_speeds = ...
+                    joint_speeds = np.linalg.pinv(self.get_spatial_jacobian()) @ Vs
+                    self.send_velocity(joint_speeds)
                 else:
                     self.get_logger().info("Joint states not found")
-                
-                self.send_velocity(joint_speeds)
-            
+
+
             rclpy.spin_once(self, timeout_sec=self.nominal_dt)
 
 
@@ -452,3 +466,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
