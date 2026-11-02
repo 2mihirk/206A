@@ -74,30 +74,53 @@ def push_clear(closest, obstacle, obstacles, segment_dir,
     """ Waypoint pushed out until it is clear of EVERY cone's buffer.
         closest - the closest point on the path segment to the obstacle
         obstacle - the (x,y) center of an obstacle that the path segment is too close to
-        obstacles - a (what data structure is this) of all obstacle centers
+        obstacles - a list of all obstacle centers
         segment_dir - the direction of the path segment
         radius - the radius of each obstacle
         safety - a factor of safety for the new point
         step - the amount to step by if the initial push isn't enough
+
 
         returns new waypoint for the path
     """
     offset = closest - obstacle
     distance = np.linalg.norm(offset)
 
+
     if distance < 1e-9:
-        direction = ...
+        # The path segment passes exactly through the center of the cone.
+        # Push perpendicularly to the segment direction (-y, x).
+        direction = np.array([-segment_dir[1], segment_dir[0]])
     else:
-        direction = ...
+        # Push radially outward from the center of the obstacle.
+        direction = offset / distance
 
-    #TODO: If the distance is very small, the path segment passes through the center of the cone. 
-    # Which direction should the new point go in this case? Otherwise, which 
-    # direction should closest get pushed?
 
-    #TODO: Propose a new point safety*radius from the obstacle, and check if it's too close to any 
-    # cone in obstacles. If it is, keep stepping out along direction by step until it no longer is. 
-    # Return the new point
-    raise NotImplementedError
+    # Propose a new point safety * radius from the obstacle
+    new_point = obstacle + direction * (radius * safety)
+
+
+    # Check if the new point is too close to ANY cone in the environment
+    for _ in range(MAX_PUSH_STEPS):
+        collision = False
+        for obs in obstacles:
+            # If the point is inside any cone's buffer, it's a collision
+            if np.linalg.norm(new_point - obs) < radius:
+                collision = True
+                break
+        
+        # If the point is clear of all obstacles, we are done
+        if not collision:
+            break
+            
+        # Otherwise, push it out further by the step size and try again
+        new_point += direction * step
+
+
+    return new_point
+
+
+
 
 
 def avoid_obstacles(vertices, obstacles, radius=OBSTACLE_RADIUS,
